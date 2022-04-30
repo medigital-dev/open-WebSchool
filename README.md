@@ -30,12 +30,12 @@ CMS meSchool adalah sebuah aplikasi website sekolah sederhana yang berbasis Cont
 Mari berdonasi agar kami semangat memperbaharui aplikasi ini, sampaikan donasi anda melalui:
 
 <ul>
-    <li>BCA 8950501198</li>
-    <li>BRI 698801015723534</li>
-    <li>DIY 002211019059</li>
-    <li>OVO/Gopay/Shopee Pay: 087839301572</li>
-    <li>Semua atas nama <strong>MUHAMMAD SAID LATIF GHOFARI</strong></li>
+    <li>BCA: 8950501198</li>
+    <li>BRI: 698801015723534</li>
+    <li>BPD DIY: 002211019059</li>
+    <li>e-wallet (OVO/Gopay/Shopee Pay): 087839301572</li>
 </ul>
+    Semua atas nama <strong>MUHAMMAD SAID LATIF GHOFARI</strong>
 
 # Lisensi
 
