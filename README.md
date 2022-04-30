@@ -33,7 +33,7 @@ Mari berdonasi agar kami semangat memperbaharui aplikasi ini, sampaikan donasi a
     <li>BCA: 8950501198</li>
     <li>BRI: 698801015723534</li>
     <li>BPD DIY: 002211019059</li>
-    <li>e-wallet (OVO/Gopay/Shopee Pay): 087839301572</li>
+    <li>e-wallet (OVO/Gopay/Shopee Pay/Dana): 087839301572</li>
 </ul>
     Semua atas nama <strong>MUHAMMAD SAID LATIF GHOFARI</strong>
 
