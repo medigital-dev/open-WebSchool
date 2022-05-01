@@ -23,6 +23,7 @@ application/logs/*
 /vendor/
 
 ### CodeIgniter Patch ###
+application\config\database.php
 
 ### VisualStudioCode ###
 .vscode/*

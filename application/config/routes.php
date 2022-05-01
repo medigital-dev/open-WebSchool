@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
 | -------------------------------------------------------------------------
@@ -19,7 +19,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 | Please see the user guide for complete details:
 |
-|	https://codeigniter.com/userguide3/general/routing.html
+|	https://codeigniter.com/user_guide/general/routing.html
 |
 | -------------------------------------------------------------------------
 | RESERVED ROUTES
@@ -49,6 +49,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'welcome';
+$route['default_controller'] = 'web';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+// $route['info/index'] = 'info/index';
+// $route['info/cari'] = 'info/cari';
+$route['info/kategori/(:any)'] = 'web/info/$1';
+$route['info/tag/(:any)'] = 'web/info/$1';
+$route['info/(:any)'] = 'web/info/$1';
+
+// $route['info'] = 'web/blogs';
+$route['cari'] = 'web/cari';
+$route['addKomentarPublik'] = 'web/addKomentarPublik';
+$route['(:num)/(:num)'] = 'web/date/$1/$2';
+$route['admin'] = 'admin';
+$route['admin/post'] = 'admin/post/list';
+$route['admin/page'] = 'admin/page/list';
+$route['auth'] = 'auth';
+$route['logout'] = 'logout';
+$route['error_404'] = 'na';
+$route['blogs'] = 'web/blogs';
+$route['blogs/(:num)'] = 'web/blogs';
+$route['(:any)'] = 'web/public/$1';
