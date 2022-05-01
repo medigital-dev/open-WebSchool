@@ -23,7 +23,7 @@ application/logs/*
 /vendor/
 
 ### CodeIgniter Patch ###
-application\config\database.php
+
 
 ### VisualStudioCode ###
 .vscode/*
@@ -77,3 +77,4 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,codeigniter,visualstudiocode
+application/config/database.php
