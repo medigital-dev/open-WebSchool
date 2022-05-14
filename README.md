@@ -4,26 +4,33 @@ CMS meSchool adalah sebuah aplikasi website sekolah sederhana yang berbasis Cont
 
 # Official website
 
- <ul>
-     <li>Homepage: https://me-school.net</li>
-     <li>Demo: https://demo.me-school.net</li>
- </ul>
+* Homepage: https://me-school.net
+* Demo: https://demo.me-school.net
 
 # Feature
 
- <ul>
-     <li>Simpel
-         <p>Tampilan website yang simple, sederhana, enak dipandang, akan tetapi awesome</p>
-     </li>
-     <li>Modern
-         <p>Disain yang modern dan kekinian</p>
-     </li>
-     <li>Responsive
-         <p>Dibuat untuk segala perangkat (Desktop/Tablet/Smartphone)</p>
-     </li>
- </ul>
+* Simpel
+Tampilan website yang simple, sederhana, enak dipandang, akan tetapi awesome
+
+* Modern
+Disain yang modern dan kekinian
+
+* Responsive
+Dibuat untuk segala perangkat (Desktop/Tablet/Smartphone)
 
 # Instalasi
+
+1 Download pada halaman release
+2 Buat database, kemudian import scema_CMS-meSchool.sql
+3 Konfigurasi file application/config/config.php
+    - Sesuaikan base_url
+    <code>$config['base_url'] = 'http://domain_anda';</code>
+4 Konfigurasi file application/config/database.php
+    - Sesuaikan database
+    <code>'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => '',
+	'database' => 'web',</code>
 
 # Donasi
 
