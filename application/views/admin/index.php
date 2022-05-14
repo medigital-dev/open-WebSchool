@@ -199,42 +199,43 @@
                             <tr>
                                 <td>Media Sosial</td>
                                 <td>:</td>
-                                <td>
-                                    <a href="<?= $dataDashboard['daftarMedsos']['facebook']; ?>" target="_blank" class="btn btn-sm mb-1 btn-facebook <?php if ($dataDashboard['daftarMedsos']['facebook'] == '') {
+                                <td><?php if ($dataDashboard['daftarMedsos']) : ?>
+                                        <a href="<?= $dataDashboard['daftarMedsos']['facebook']; ?>" target="_blank" class="btn btn-sm mb-1 btn-facebook <?php if ($dataDashboard['daftarMedsos']['facebook'] == '') {
+                                                                                                                                                                echo 'disabled';
+                                                                                                                                                            } ?>">
+                                            <i class="fab fa-facebook-square fa-fw"></i>
+                                        </a>
+                                        <a href="<?= $dataDashboard['daftarMedsos']['twitter']; ?>" target="_blank" class="btn btn-sm mb-1 btn-info <?php if ($dataDashboard['daftarMedsos']['twitter'] == '') {
+                                                                                                                                                        echo 'disabled';
+                                                                                                                                                    } ?>">
+                                            <i class="fab fa-twitter-square fa-fw"></i>
+                                        </a>
+                                        <a href="<?= $dataDashboard['daftarMedsos']['instagram']; ?>" target="_blank" class="btn btn-sm mb-1 btn-warning <?php if ($dataDashboard['daftarMedsos']['instagram'] == '') {
+                                                                                                                                                                echo 'disabled';
+                                                                                                                                                            } ?>">
+                                            <i class="fab fa-instagram fa-fw"></i>
+                                        </a>
+                                        <a href="<?= $dataDashboard['daftarMedsos']['youtube']; ?>" target="_blank" class="btn btn-sm mb-1 btn-danger <?php if ($dataDashboard['daftarMedsos']['youtube'] == '') {
                                                                                                                                                             echo 'disabled';
                                                                                                                                                         } ?>">
-                                        <i class="fab fa-facebook-square fa-fw"></i>
-                                    </a>
-                                    <a href="<?= $dataDashboard['daftarMedsos']['twitter']; ?>" target="_blank" class="btn btn-sm mb-1 btn-info <?php if ($dataDashboard['daftarMedsos']['twitter'] == '') {
-                                                                                                                                                    echo 'disabled';
-                                                                                                                                                } ?>">
-                                        <i class="fab fa-twitter-square fa-fw"></i>
-                                    </a>
-                                    <a href="<?= $dataDashboard['daftarMedsos']['instagram']; ?>" target="_blank" class="btn btn-sm mb-1 btn-warning <?php if ($dataDashboard['daftarMedsos']['instagram'] == '') {
+                                            <i class="fab fa-youtube fa-fw"></i>
+                                        </a>
+                                        <a href="<?= $dataDashboard['daftarMedsos']['whatsapp']; ?>" target="_blank" class="btn btn-sm mb-1 btn-success <?php if ($dataDashboard['daftarMedsos']['whatsapp'] == '') {
                                                                                                                                                             echo 'disabled';
                                                                                                                                                         } ?>">
-                                        <i class="fab fa-instagram fa-fw"></i>
-                                    </a>
-                                    <a href="<?= $dataDashboard['daftarMedsos']['youtube']; ?>" target="_blank" class="btn btn-sm mb-1 btn-danger <?php if ($dataDashboard['daftarMedsos']['youtube'] == '') {
+                                            <i class="fab fa-whatsapp fa-fw"></i>
+                                        </a>
+                                        <a href="<?= $dataDashboard['daftarMedsos']['telegram']; ?>" target="_blank" class="btn btn-sm mb-1 btn-primary <?php if ($dataDashboard['daftarMedsos']['telegram'] == '') {
+                                                                                                                                                            echo 'disabled';
+                                                                                                                                                        } ?>">
+                                            <i class="fab fa-telegram fa-fw"></i>
+                                        </a>
+                                        <a href="<?= $dataDashboard['daftarMedsos']['maps']; ?>" target="_blank" class="btn btn-sm mb-1 btn-info <?php if ($dataDashboard['daftarMedsos']['maps'] == '') {
                                                                                                                                                         echo 'disabled';
                                                                                                                                                     } ?>">
-                                        <i class="fab fa-youtube fa-fw"></i>
-                                    </a>
-                                    <a href="<?= $dataDashboard['daftarMedsos']['whatsapp']; ?>" target="_blank" class="btn btn-sm mb-1 btn-success <?php if ($dataDashboard['daftarMedsos']['whatsapp'] == '') {
-                                                                                                                                                        echo 'disabled';
-                                                                                                                                                    } ?>">
-                                        <i class="fab fa-whatsapp fa-fw"></i>
-                                    </a>
-                                    <a href="<?= $dataDashboard['daftarMedsos']['telegram']; ?>" target="_blank" class="btn btn-sm mb-1 btn-primary <?php if ($dataDashboard['daftarMedsos']['telegram'] == '') {
-                                                                                                                                                        echo 'disabled';
-                                                                                                                                                    } ?>">
-                                        <i class="fab fa-telegram fa-fw"></i>
-                                    </a>
-                                    <a href="<?= $dataDashboard['daftarMedsos']['maps']; ?>" target="_blank" class="btn btn-sm mb-1 btn-info <?php if ($dataDashboard['daftarMedsos']['maps'] == '') {
-                                                                                                                                                    echo 'disabled';
-                                                                                                                                                } ?>">
-                                        <i class="fas fa-map-marker-alt fa-fw"></i>
-                                    </a>
+                                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                                        </a>
+                                    <?php endif; ?>
                                 </td>
 
                             </tr>

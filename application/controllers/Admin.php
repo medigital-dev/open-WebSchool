@@ -39,6 +39,26 @@ class Admin extends CI_Controller
         $dataIdentitas = $this->Identitas_model->get();
         $dataMedsos = $this->Medsos_model->getAll();
 
+        if ($dataIdentitas) {
+            $dataidentitas2 = [
+                'logo' => $dataIdentitas['logo'],
+                'nama' => $dataIdentitas['nama'],
+                'alamat' => $dataIdentitas['alamat'],
+                'telepon' => $dataIdentitas['telepon'],
+                'email' => $dataIdentitas['email'],
+                'website' => $dataIdentitas['website'],
+            ];
+        } else {
+            $dataidentitas2 = [
+                'logo' => base_url('assets/global/images/default_logo.png'),
+                'nama' => '',
+                'alamat' => '',
+                'telepon' => '',
+                'email' => '',
+                'website' => '',
+            ];
+        }
+
         $daftarPostingan = [];
         foreach ($dataPostingan as $row) {
             $date = date_create_from_format('Y-m-d H:i:s', $row['date']);
@@ -69,7 +89,7 @@ class Admin extends CI_Controller
             'jumlahPengguna' => count($dataPengguna),
             'daftarHalaman' => $daftarHalaman,
             'daftarPostingan' => $daftarPostingan,
-            'daftarIdentitas' => $dataIdentitas,
+            'daftarIdentitas' => $dataidentitas2,
             'daftarMedsos' => $dataMedsos
         ];
 
