@@ -57,7 +57,6 @@ Mari berdonasi agar kami semangat memperbaharui aplikasi ini, sampaikan donasi a
 * e-wallet (OVO/Gopay/Shopee Pay/Dana): 087839301572
 
 Semua atas nama __MUHAMMAD SAID LATIF GHOFARI__.
-
 Jangan lupa konfirmasi melalui [kontak](#kontak), supaya saya kenal anda.
 
 # Kontak
