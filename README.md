@@ -4,10 +4,10 @@
 CMS-meSchool adalah sebuah aplikasi website sekolah sederhana yang berbasis Content Management System.
 
 # Official website
-* Homepage: https://me-school.net
-* Demo: https://demo.me-school.net
-* User Guide: https://me-school.net/guide
-* Term of Service: http://me-school.net/tos
+* Homepage: https://me-digital.net/cms-meschool
+* Demo: https://demo.me-digital.net/cms-meschool
+* User Guide: https://me-digital.net/cms-meschool/guide
+* Term of Service: http://me-digital.net/cms-meschool/tos
 
 # Feature
 * ### Simpel
