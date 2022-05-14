@@ -12,19 +12,19 @@ CMS-meSchool adalah sebuah aplikasi website sekolah sederhana yang berbasis Cont
 # Feature
 * ### Simpel
 
-  Tampilan website yang simple, sederhana, enak dipandang, akan tetapi awesome
+  Tampilan website yang simple, sederhana, enak dipandang, akan tetapi awesome.
 
 * ### Cepat
 
-  Tampilan yang simpel, menjadikan loading cepat
+  Tampilan yang simpel, menjadikan loading cepat.
 
 * ### Modern
 
-  Disain yang modern dan kekinian
+  Disain yang modern dan kekinian.
 
 * ### Responsive
 
-  Dibuat untuk segala perangkat (Desktop/Tablet/Smartphone)
+  Dibuat untuk segala perangkat (Desktop/Tablet/Smartphone).
 
 # Instalasi
 1. Download pada halaman release
@@ -46,22 +46,21 @@ CMS-meSchool adalah sebuah aplikasi website sekolah sederhana yang berbasis Cont
         ...
         );
         ```
-5. Testing websitenya.
+5. Testing websitenya
 6. Ada yang error? jangan sungkan untuk [kontak](#kontak) kami
 
 # Donasi
 Mari berdonasi agar kami semangat memperbaharui aplikasi ini, sampaikan donasi anda melalui:
-
 * BCA: 8950501198
 * BRI: 698801015723534
 * BPD DIY: 002211019059
 * e-wallet (OVO/Gopay/Shopee Pay/Dana): 087839301572
-Semua atas nama __MUHAMMAD SAID LATIF GHOFARI__
+Semua atas nama __MUHAMMAD SAID LATIF GHOFARI__.
 
-Jangan lupa konfirmasi melalui [kontak](#kontak), supaya kami kenal anda
+Jangan lupa konfirmasi melalui [kontak](#kontak), supaya saya kenal anda.
 
 # Kontak
-Lihat [profil](https://github.com/mesaidlg)
+Lihat [profil](https://github.com/mesaidlg).
 
 # Lisensi
-Copyright (c) 2022 [@mesaidlg](https://github.com/mesaidlg) under MIT Licence
+Copyright (c) 2022 [@mesaidlg](https://github.com/mesaidlg) under MIT Licence.
