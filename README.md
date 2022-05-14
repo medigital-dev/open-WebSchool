@@ -29,8 +29,8 @@ Dibuat untuk segala perangkat (Desktop/Tablet/Smartphone)
     - Sesuaikan database
         'hostname' => 'localhost',
 	    'username' => 'root',
-	    'password' => '',`
-        'database' => 'web',`
+	    'password' => '',
+        'database' => 'web',
 
 # Donasi
 
