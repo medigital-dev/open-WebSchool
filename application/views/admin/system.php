@@ -28,7 +28,7 @@
                 <a href="#collapseUpload" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseUpload">
                     <h6 class="m-0 font-weight-bold text-primary" id="judul">File Upload</h6>
                 </a>
-                <div class="collapse" id="collapseUpload">
+                <div class="collapse show" id="collapseUpload">
                     <div class="card-body">
                         <form action="<?= base_url('admin/setUploadConfig'); ?>" method="POST" id="form">
                             <input type="hidden" name="id" value="<?= $config['id_config_upload']; ?>">
@@ -134,7 +134,7 @@
                 </div>
             </div>
 
-            <div class="card shadow mb-4">
+            <!-- <div class="card shadow mb-4">
                 <a href="#collapseBackupRestore" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseBackupRestore">
                     <h6 class="m-0 font-weight-bold text-primary">Backup-Restore</h6>
                 </a>
@@ -161,7 +161,7 @@
 
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 

@@ -819,7 +819,7 @@ class Web extends CI_Controller
 
         $config['base_url'] = base_url() . 'blogs/';
         $config['total_rows'] = count($posts);
-        $config['per_page'] = 6;
+        $config['per_page'] = 12;
 
         $config['full_tag_open'] = '<nav aria-label="Pagination"><hr class="my-0" /><ul class="pagination justify-content-center my-4">';
         $config['full_tag_close'] = '</ul></nav>';
@@ -878,7 +878,7 @@ class Web extends CI_Controller
                 'dibaca' => $postLimit[$i]['viewer'],
                 'komentar' => count($komentarIni),
                 'isi' => $postLimit[$i]['isi'],
-                'author' => $user['username']
+                'author' => $user['username'],
             ];
             array_push($dataPostingan, $data);
         }

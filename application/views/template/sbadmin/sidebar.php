@@ -104,12 +104,11 @@
         </a>
         <div id="collapseContent" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <!-- <a class="collapse-item" href="<?= base_url(); ?>admin/webContent">Web Content</a>
-                <a class="collapse-item" href="<?= base_url(); ?>admin/homepage">Homepage</a> -->
+                <!-- <a class="collapse-item" href="<?= base_url(); ?>admin/webContent">Web Content</a> -->
                 <a class="collapse-item" href="<?= base_url(); ?>admin/identitas">Identitas</a>
+                <a class="collapse-item" href="<?= base_url(); ?>admin/homepage">Homepage</a>
                 <a class="collapse-item" href="<?= base_url(); ?>admin/menu">Menu</a>
                 <a class="collapse-item" href="<?= base_url(); ?>admin/system">Sistem</a>
-                <!-- <a class="collapse-item" href="<?= base_url(); ?>admin/sistem">Sistem</a> -->
             </div>
         </div>
     </li>

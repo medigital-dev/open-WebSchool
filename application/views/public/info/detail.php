@@ -11,7 +11,7 @@
             <a class="text-decoration-none link-success" href="<?= $post['linkKategori']; ?>">Kategori: <?= $post['kategori']; ?></a>
         </header>
         <!-- Preview image figure-->
-        <figure class="mb-2"><img class="img-fluid rounded" src="<?= $post['sampul']; ?>" style="height: 500px; width: 100%; object-fit: cover; object-position: center center" alt="..." /></figure>
+        <!-- <figure class="mb-2"><img class="img-fluid rounded" src="<?= $post['sampul']; ?>" style="height: 500px; width: 100%; object-fit: cover; object-position: center center" alt="..." /></figure> -->
         <!-- Post content-->
         <section class="mb-2">
             <p class="fs-3"><?= $post['isi']; ?></p>

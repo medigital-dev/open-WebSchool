@@ -1913,4 +1913,19 @@ class Admin extends CI_Controller
             redirect('admin/system');
         }
     }
+
+    public function homepage()
+    {
+        $data = [
+            'title' => 'System',
+            'sidebar' => 'system',
+        ];
+
+        $this->load->view('template/sbadmin/header', $data);
+        $this->load->view('template/sbadmin/sidebar');
+        $this->load->view('template/sbadmin/navbar', $this->navbarStatus());
+        $this->load->view('admin/homepage');
+        $this->load->view('template/sbadmin/footer');
+        $this->session->unset_userdata('message');
+    }
 }
