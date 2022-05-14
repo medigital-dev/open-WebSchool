@@ -8,19 +8,19 @@ CMS-meSchool adalah sebuah aplikasi website sekolah sederhana yang berbasis Cont
 # Feature
 * Simpel
 
-Tampilan website yang simple, sederhana, enak dipandang, akan tetapi awesome
+  Tampilan website yang simple, sederhana, enak dipandang, akan tetapi awesome
 
 * Cepat
 
-Tampilan yang simpel, menjadikan loading cepat
+  Tampilan yang simpel, menjadikan loading cepat
 
 * Modern
 
-Disain yang modern dan kekinian
+  Disain yang modern dan kekinian
 
 * Responsive
 
-Dibuat untuk segala perangkat (Desktop/Tablet/Smartphone)
+  Dibuat untuk segala perangkat (Desktop/Tablet/Smartphone)
 
 # Instalasi
 1. Download pada halaman release
