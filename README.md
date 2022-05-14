@@ -55,6 +55,7 @@ Mari berdonasi agar kami semangat memperbaharui aplikasi ini, sampaikan donasi a
 * BRI: 698801015723534
 * BPD DIY: 002211019059
 * e-wallet (OVO/Gopay/Shopee Pay/Dana): 087839301572
+
 Semua atas nama __MUHAMMAD SAID LATIF GHOFARI__.
 
 Jangan lupa konfirmasi melalui [kontak](#kontak), supaya saya kenal anda.
