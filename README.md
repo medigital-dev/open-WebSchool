@@ -24,15 +24,21 @@ Dibuat untuk segala perangkat (Desktop/Tablet/Smartphone)
 2. Buat database, kemudian import scema_CMS-meSchool.sql
 3. Konfigurasi file application/config/config.php
     - Sesuaikan base_url
-    `$config['base_url'] = 'http://domain_anda';`
+    ```php
+    $config['base_url'] = 'http://domain_anda';
+    ```
 4. Konfigurasi file application/config/database.php
     - Sesuaikan database
-    ```php
-    'hostname' => 'localhost',
-    'username' => 'username',
-    'password' => 'password',
-    'database' => 'nama_database',
-    ```
+        ```php
+        $db['default'] = array(
+        ...
+        'hostname' => 'localhost',
+        'username' => 'username',
+        'password' => 'password',
+        'database' => 'nama_database',
+        ...
+        );
+        ```
 
 # Donasi
 
