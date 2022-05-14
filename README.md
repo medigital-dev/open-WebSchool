@@ -27,11 +27,11 @@ Dibuat untuk segala perangkat (Desktop/Tablet/Smartphone)
     `$config['base_url'] = 'http://domain_anda';`
 4. Konfigurasi file application/config/database.php
     - Sesuaikan database
-    ```json
+    ```php
     'hostname' => 'localhost',
-    'username' => 'root',
-    'password' => '',
-    'database' => 'web',
+    'username' => 'username',
+    'password' => 'password',
+    'database' => 'nama_database',
     ```
 
 # Donasi
