@@ -39,7 +39,7 @@ CMS-meSchool adalah sebuah aplikasi website sekolah sederhana yang berbasis Cont
         );
         ```
 5. Testing websitenya.
-6. Ada yang error? jangan sungkan untuk [kontak](https://github.com/mesaidlg) kami
+6. Ada yang error? jangan sungkan untuk [kontak](#kontak) kami
 
 # Donasi
 Mari berdonasi agar kami semangat memperbaharui aplikasi ini, sampaikan donasi anda melalui:
@@ -50,7 +50,7 @@ Mari berdonasi agar kami semangat memperbaharui aplikasi ini, sampaikan donasi a
 * e-wallet (OVO/Gopay/Shopee Pay/Dana): 087839301572
 Semua atas nama __MUHAMMAD SAID LATIF GHOFARI__
 
-Jangan lupa konfirmasi melalui [kontak](https://github.com/mesaidlg), supaya kami kenal anda
+Jangan lupa konfirmasi melalui [kontak](#kontak), supaya kami kenal anda
 
 # Kontak
 Lihat [profil](https://github.com/mesaidlg)
