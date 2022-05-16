@@ -66,12 +66,17 @@
             <a class="nav-link" href="#">Tentang</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
               Informasi
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">Berita</a></li>
-              <li><a class="dropdown-item" href="#">Pengumuman</a></li>
+              <li class="dropend">
+                <a class="dropdown-item dropdown-toggle" id="navbarDropdown2" href="#" data-bs-toggle="dropdown">Pengumuman</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                  <li><a class="dropdown-item" href="#">Berita</a></li>
+                </ul>
+              </li>
               <li>
                 <hr class="dropdown-divider">
               </li>
