@@ -155,8 +155,29 @@
     </div>
   </section>
 
-  <section id="about">
+  <section id="cms">
+    <div class="px-5 mb-4 bg-light rounded-3">
+      <div class="container py-5">
+        <h1 class="display-5 fw-bold">Sekilas tentang kami</h1>
+        <p class="col-md-12 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+        <a href="#!" class="btn btn-primary btn-lg">Link</a>
+      </div>
+    </div>
 
+    <div class="px-5 mb-4 bg-light rounded-3">
+      <div class="container py-5">
+        <h1 class="display-5 fw-bold">Sambutan Kepala Sekolah</h1>
+        <div class="row">
+          <div class="col-md-8">
+            <p class="fs-4 mb-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores cumque aliquam, dolorum eaque illo repellendus veniam eligendi cum fugiat tenetur porro temporibus ab inventore aspernatur consectetur ex ratione quos exercitationem repudiandae eveniet delectus laboriosam eum. Pariatur, adipisci? Atque, voluptatum voluptate iste nostrum, corporis aut numquam aliquam repudiandae maiores, dolor nemo delectus velit. Maiores necessitatibus et totam dicta nostrum illo nihil quia dolorem sint harum velit modi, ducimus expedita architecto provident unde beatae culpa error sequi sapiente iure corrupti dignissimos debitis? Tenetur consectetur ratione quos deleniti nobis reprehenderit labore voluptatum exercitationem, eius molestiae iusto aspernatur sapiente culpa suscipit laudantium iste quasi.</p>
+            <a href="#!" class="btn btn-primary btn-lg mb-3">Link</a>
+          </div>
+          <div class="col-md-4 mb-3">
+            <img src="<?= base_url('assets/global/images/kepala_sekolah.png'); ?>" class="img-fluid rounded-circle img-thumbnail">
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Optional JavaScript; choose one of the two! -->
