@@ -28,6 +28,12 @@
     .icon_link {
       text-decoration: none;
     }
+
+    .blog-group {
+      overflow-x: hidden;
+      overflow-y: auto;
+      height: 300px;
+    }
   </style>
   <title>#SMP-Demo</title>
 </head>
@@ -35,7 +41,7 @@
 <body>
   <!-- <section id="navbar"> -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
-    <div class="container">
+    <div class="container px-4">
       <a class="navbar-brand" href="#">#SMP-Demo</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -73,7 +79,7 @@
   </nav>
   <!-- </section> -->
   <section id="heroes">
-    <div class="container col-xxl-8 px-4 py-3">
+    <div class="container col-xxl-12 py-3 px-5">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div class="col-lg-6">
           <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -108,8 +114,8 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <h1 class="display-5 fw-bold lh-1 mb-3">Selamat Datang di SMP Demo</h1>
-          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, itaque aspernatur molestiae sapiente esse eos labore. Dignissimos similique numquam aliquid reiciendis, dolorem corporis laudantium ipsum. Laudantium enim architecto recusandae obcaecati?</p>
+          <h1 class="display-5 fw-bold mb-4 lh-1 mb-3">Selamat Datang di SMP Demo</h1>
+          <p class="lead fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, itaque aspernatur molestiae sapiente esse eos labore. Dignissimos similique numquam aliquid reiciendis, dolorem corporis laudantium ipsum. Laudantium enim architecto recusandae obcaecati?</p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
             <a href="#!" class="btn btn-primary btn-lg px-4">Link</a>
           </div>
@@ -155,18 +161,20 @@
     </div>
   </section>
 
-  <section id="cms">
-    <div class="px-5 mb-4 bg-light rounded-3">
+  <section id="about">
+    <div class="px-4 bg-light rounded-3">
       <div class="container py-5">
-        <h1 class="display-5 fw-bold">Sekilas tentang kami</h1>
-        <p class="col-md-12 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+        <h1 class="display-5 fw-bold mb-4">Sekilas tentang kami</h1>
+        <p class="col-md-12 fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda temporibus totam debitis libero optio saepe nam dolorum repellendus nisi nobis sunt impedit officiis aspernatur architecto sit itaque aliquid corporis, ea labore vero asperiores dolore. Nam at dolor placeat reiciendis numquam ab ratione doloremque facilis culpa id. Iure, consectetur? Eligendi, tenetur.</p>
         <a href="#!" class="btn btn-primary btn-lg">Link</a>
       </div>
     </div>
+  </section>
 
-    <div class="px-5 mb-4 bg-light rounded-3">
+  <section id="kepala-sekolah">
+    <div class="px-4 bg-light rounded-3">
       <div class="container py-5">
-        <h1 class="display-5 fw-bold">Sambutan Kepala Sekolah</h1>
+        <h1 class="display-5 fw-bold mb-4">Sambutan Kepala Sekolah</h1>
         <div class="row">
           <div class="col-md-8">
             <p class="fs-4 mb-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores cumque aliquam, dolorum eaque illo repellendus veniam eligendi cum fugiat tenetur porro temporibus ab inventore aspernatur consectetur ex ratione quos exercitationem repudiandae eveniet delectus laboriosam eum. Pariatur, adipisci? Atque, voluptatum voluptate iste nostrum, corporis aut numquam aliquam repudiandae maiores, dolor nemo delectus velit. Maiores necessitatibus et totam dicta nostrum illo nihil quia dolorem sint harum velit modi, ducimus expedita architecto provident unde beatae culpa error sequi sapiente iure corrupti dignissimos debitis? Tenetur consectetur ratione quos deleniti nobis reprehenderit labore voluptatum exercitationem, eius molestiae iusto aspernatur sapiente culpa suscipit laudantium iste quasi.</p>
@@ -176,6 +184,80 @@
             <img src="<?= base_url('assets/global/images/kepala_sekolah.png'); ?>" class="img-fluid rounded-circle img-thumbnail">
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="recent-blog">
+    <div class="px-4">
+      <div class="container py-5">
+        <h1 class="display-5 fw-bold mb-4">Postingan terakhir</h1>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="card mb-3">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="blog-group">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-lg-4">
+                    <img src="..." class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-lg-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-lg-4">
+                    <img src="..." class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-lg-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-lg-4">
+                    <img src="..." class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-lg-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="px-4">
+      <div class="container py-5">
+        <h1 class="display-5 fw-bold mb-4">Hubuni kami</h1>
       </div>
     </div>
   </section>
