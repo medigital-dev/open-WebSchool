@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="<?= base_url('assets/plugins/bootstrap/css/bootstrap.min.css'); ?>">
   <!-- fontawesome -->
   <link rel="stylesheet" href="<?= base_url('assets/plugins/fontawesome/css/all.min.css'); ?>">
   <!-- Custom CSS -->
@@ -29,16 +29,6 @@
       text-decoration: none;
     }
 
-    /* .blog-group {
-      overflow-x: hidden;
-      overflow-y: auto;
-      height: 540px;
-      scroll-behavior: smooth;
-    }
-
-    .blog-group .card img {
-      object-fit: cover;
-    } */
     .featured-blog {
       height: 330px;
       object-fit: cover;
@@ -73,23 +63,26 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Tentang</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+              Informasi
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Berita</a></li>
+              <li><a class="dropdown-item" href="#">Pengumuman</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Unduhan</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
+            <a class="nav-link" href="#!">Layanan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#!">Kontak</a>
           </li>
         </ul>
         <form class="d-flex">
@@ -321,64 +314,86 @@
   <div class="container border-top">
     <footer class="pt-5">
       <div class="row">
-        <div class="col-2">
-          <h5>Section</h5>
+        <div class="col-md-2 mb-4">
+          <h5>SMP Demo</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy Policies</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Akademik</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Kesiswaan</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sarana Prasarana</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Humas</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h5>Kategori Populer</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Berita</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Galeri</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pengumuman</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tutorial</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Surat Edaran</a></li>
           </ul>
         </div>
 
-        <div class="col-2">
-          <h5>Section</h5>
+        <div class="col-md-2 mb-4">
+          <h5>Tags Populer</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">#JadwalPelajaran</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">#KuotaGratis</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">#Lomba</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">#tryoutASPD</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">#hutSMPDemo</a></li>
           </ul>
         </div>
 
-        <div class="col-2">
-          <h5>Section</h5>
+        <div class="col-md-2 mb-4">
+          <h5>Tautan</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Kemdikbud</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Dapodikdasmen</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Info GTK</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sekolah Kita</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Dinas Pendidikan</a></li>
           </ul>
         </div>
 
-        <div class="col-4 offset-1">
-          <form>
-            <h5>Subscribe to our newsletter</h5>
-            <p>Monthly digest of whats new and exciting from us.</p>
-            <div class="d-flex w-100 gap-2">
-              <label for="newsletter1" class="visually-hidden">Email address</label>
-              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-              <button class="btn btn-primary" type="button">Subscribe</button>
-            </div>
-          </form>
+        <div class="col-md-4">
+          <img src="<?= base_url('assets/global/images/default_logo.png'); ?>" alt="Logo SMP Demo" width="100" class="img-thumbnail mb-2">
+          <h5>SMP DEMO</h5>
+          <p>Alamat lengkap, Nama Jalan, Nama Desa, Nama Kecamatan, Nama Kabupaten/Kota, Nama Provinsi, Kode Pos</p>
+
         </div>
       </div>
 
       <div class="d-flex justify-content-between pt-4 my-2 border-top">
         <p>© 2022 <a href="<?= base_url(); ?>" target="_blank" class="text-dark text-decoration-none">SMP Demo</a>. Create and Development by <a href="https://me-digital.net" target="_blank" class="text-dark text-decoration-none" title="me-digital.net"><img src="<?= base_url('assets/global/images/favicon.png'); ?>" height="25" alt="Logo me-digital.net"></a></p>
         <ul class="list-unstyled d-flex">
-          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                <use xlink:href="#twitter"></use>
-              </svg></a></li>
-          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                <use xlink:href="#instagram"></use>
-              </svg></a></li>
-          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                <use xlink:href="#facebook"></use>
-              </svg></a></li>
+          <li class="ms-3">
+            <a class="link-dark" href="#">
+              <i class="fa-brands fa-facebook fa-fw fa-xl"></i>
+            </a>
+          </li>
+          <li>
+            <a class="link-dark" href="#">
+              <i class="fa-brands fa-twitter fa-fw fa-xl"></i>
+            </a>
+          </li>
+          <li>
+            <a class="link-dark" href="#">
+              <i class="fa-brands fa-instagram fa-fw fa-xl"></i>
+            </a>
+          </li>
+          <li>
+            <a class="link-dark" href="#">
+              <i class="fa-brands fa-youtube fa-fw fa-xl"></i>
+            </a>
+          </li>
+          <li>
+            <a class="link-dark" href="#">
+              <i class="fa-solid fa-location-dot fa-fw fa-xl"></i>
+            </a>
+          </li>
         </ul>
       </div>
     </footer>
@@ -387,8 +402,7 @@
   <!-- Optional JavaScript; choose one of the two! -->
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+  <script src="<?= base_url('assets/plugins/bootstrap/js/bootstrap.bundle.min.js'); ?>"></script>
 </body>
 
 </html>
