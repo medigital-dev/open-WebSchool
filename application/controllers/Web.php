@@ -20,67 +20,11 @@ class Web extends CI_Controller
 
     public function index()
     {
-        $allMenu = $this->Menu_model->getAll();
-        $mainMenu = $this->Menu_model->getMainMenu();
-        $dataHalaman = $this->Page_model->getAll();
-        $latestBlog = $this->Post_model->getLatestPost(5);
-        $unreadKomentar = $this->Comment_model->getUnread();
-        $unreadMessage = $this->Pesan_model->getUnread();
-        $halaman = [];
-        $blogs = [];
-
-        foreach ($dataHalaman as $row) {
-            $data = [
-                'link' => base_url($row['url']),
-                'judul' => $row['title']
-            ];
-            array_push($halaman, $data);
-        }
-        foreach ($latestBlog as $row) {
-            $fileSampul = $row['foto_sampul'];
-            $fileSampulLoc = str_replace(base_url(), './', $fileSampul);
-
-            if (file_exists($fileSampulLoc)) {
-                $sampul = $fileSampul;
-            } else {
-                $sampul = base_url('assets/global/images/post.jpg');
-            }
-
-            $data = [
-                'link' => base_url() .  $row['link'],
-                'sampul' => $sampul,
-                'judul' => $row['judul']
-            ];
-            array_push($blogs, $data);
-        }
-
         $data = [
             'title' => 'SMP Negeri 2 Wonosari - #EsperoJaya',
-            'latestBlog' => $blogs,
-            'pages' => $halaman,
-            'menuUtama' => $mainMenu,
-            'allMenu' => $allMenu,
-            'page' => 'homepage',
-            'komentarBaru' => $unreadKomentar,
-            'pesanBaru' => $unreadMessage
         ];
 
-        $this->form_validation->set_rules('nama', 'Nama', 'required');
-        $this->form_validation->set_rules('nomorWA', 'Nomor WA', 'required|numeric');
-        $this->form_validation->set_rules('emailAddress', 'Alamat email', 'required|valid_email');
-        $this->form_validation->set_rules('message', 'Pesan anda', 'required');
-        $this->form_validation->set_message('required', '%s wajib diisi!');
-        $this->form_validation->set_message('valid_email', '%s bukan email!');
-        $this->form_validation->set_message('numeric', '%s bukan nomor!');
-
-        if ($this->form_validation->run() == false) {
-            $this->load->view('template/public/header', $data);
-            $this->load->view('public/index');
-            $this->load->view('template/public/footer', $this->footer());
-            $this->session->unset_userdata('message');
-        } else {
-            $this->sendMessage();
-        }
+        $this->load->view('public/index', $data);
     }
 
     public function sendMessage()
