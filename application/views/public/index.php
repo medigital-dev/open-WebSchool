@@ -5,7 +5,8 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <!-- favicon -->
+  <link rel="shortcut icon" href="<?= base_url('assets/global/images/favicon.png'); ?>" type="image/x-icon">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="<?= base_url('assets/plugins/bootstrap/css/bootstrap.min.css'); ?>">
   <!-- fontawesome -->
@@ -229,7 +230,7 @@
             <div class="list-group shadow">
               <a href="#!" class="list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">Judul Postingan 1</h5>
+                  <h5 class="mb-1" id="judul">Judul Postingan 1</h5>
                   <small><i class="fa-solid fa-calendar-days fa-fw me-2"></i>21/05/2022</small>
                 </div>
                 <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis iure ab quia libero pariatur obcaecati!</p>
@@ -237,7 +238,7 @@
               </a>
               <a href="#!" class="list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">Judul Postingan 2</h5>
+                  <h5 class="mb-1" id="judul">Judul Postingan 2</h5>
                   <small class="text-muted"><i class="fa-solid fa-calendar-days fa-fw me-2"></i>21/05/2022</small>
                 </div>
                 <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis iure ab quia libero pariatur obcaecati!</p>
@@ -245,7 +246,7 @@
               </a>
               <a href="#!" class="list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">Judul Postingan 3</h5>
+                  <h5 class="mb-1" id="judul">Judul Postingan 3</h5>
                   <small class="text-muted"><i class="fa-solid fa-calendar-days fa-fw me-2"></i>21/05/2022</small>
                 </div>
                 <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis iure ab quia libero pariatur obcaecati!</p>
@@ -253,7 +254,7 @@
               </a>
               <a href="#!" class="list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">Judul Postingan 4</h5>
+                  <h5 class="mb-1" id="judul">Judul Postingan 4</h5>
                   <small class="text-muted"><i class="fa-solid fa-calendar-days fa-fw me-2"></i>21/05/2022</small>
                 </div>
                 <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis iure ab quia libero pariatur obcaecati!</p>
@@ -405,13 +406,16 @@
     </footer>
   </div>
 
-  <!-- Optional JavaScript; choose one of the two! -->
-
-  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <!-- Bootstrap Bundle with Popper -->
   <script src="<?= base_url('assets/plugins/bootstrap/js/bootstrap.bundle.min.js'); ?>"></script>
+  <!-- jquery -->
+  <script src="<?= base_url('assets/plugins/jquery/jquery.min.js'); ?>"></script>
 
   <script>
-
+    $('.list-group-item').click(function(e) {
+      e.preventDefault();
+      console.log($(this).find('h5').text());
+    });
   </script>
 </body>
 
