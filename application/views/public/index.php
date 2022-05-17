@@ -217,9 +217,15 @@
               <div class="card shadow mb-3">
                 <img src="<?= base_url('assets/global/images/image-sample-post.png'); ?>" class="featured-blog" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="card-title">Judul postingan</h5>
+                    <h5 class="card-title">Berita</h5>
+                  </div>
+                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima numquam ab distinctio quos vero ullam. Ipsum, voluptatum. Dicta aperiam esse molestiae repellendus, corporis ea, explicabo facilis omnis accusantium consequatur voluptatem?</p>
+                  <div class="d-flex justify-content-between">
+                    <small class="text-primary"><i class="fa-solid fa-calendar-days fa-fw me-2"></i>21/05/2022</small>
+                    <small class="text-success"><i class="fa-solid fa-user-pen fa-fw me-2"></i>mesaidlg</small>
+                  </div>
                 </div>
               </div>
             </div>
@@ -228,35 +234,35 @@
             <div class="list-group shadow">
               <a href="#!" class="list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">List group item heading</h5>
-                  <small>3 days ago</small>
+                  <h5 class="mb-1">Judul Postingan</h5>
+                  <small><i class="fa-solid fa-calendar-days fa-fw me-2"></i>21/05/2022</small>
                 </div>
-                <p class="mb-1">Some placeholder content in a paragraph.</p>
-                <small>And some small print.</small>
+                <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis iure ab quia libero pariatur obcaecati!</p>
+                <small><i class="fa-solid fa-user-pen fa-fw me-2"></i>mesaidlg</small>
               </a>
               <a href="#!" class="list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">List group item heading</h5>
-                  <small class="text-muted">3 days ago</small>
+                  <h5 class="mb-1">Judul Postingan</h5>
+                  <small class="text-muted"><i class="fa-solid fa-calendar-days fa-fw me-2"></i>21/05/2022</small>
                 </div>
-                <p class="mb-1">Some placeholder content in a paragraph.</p>
-                <small class="text-muted">And some muted small print.</small>
+                <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis iure ab quia libero pariatur obcaecati!</p>
+                <small class="text-muted"><i class="fa-solid fa-user-pen fa-fw me-2"></i>mesaidlg</small>
               </a>
               <a href="#!" class="list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">List group item heading</h5>
-                  <small class="text-muted">3 days ago</small>
+                  <h5 class="mb-1">Judul Postingan</h5>
+                  <small class="text-muted"><i class="fa-solid fa-calendar-days fa-fw me-2"></i>21/05/2022</small>
                 </div>
-                <p class="mb-1">Some placeholder content in a paragraph.</p>
-                <small class="text-muted">And some muted small print.</small>
+                <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis iure ab quia libero pariatur obcaecati!</p>
+                <small class="text-muted"><i class="fa-solid fa-user-pen fa-fw me-2"></i>mesaidlg</small>
               </a>
               <a href="#!" class="list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">List group item heading</h5>
-                  <small class="text-muted">3 days ago</small>
+                  <h5 class="mb-1">Judul Postingan</h5>
+                  <small class="text-muted"><i class="fa-solid fa-calendar-days fa-fw me-2"></i>21/05/2022</small>
                 </div>
-                <p class="mb-1">Some placeholder content in a paragraph.</p>
-                <small class="text-muted">And some muted small print.</small>
+                <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis iure ab quia libero pariatur obcaecati!</p>
+                <small class="text-muted"><i class="fa-solid fa-user-pen fa-fw me-2"></i>mesaidlg</small>
               </a>
               <a href="#" class="list-group-item list-group-item-action text-center bg-primary text-white">Selengkapnya</a>
             </div>
