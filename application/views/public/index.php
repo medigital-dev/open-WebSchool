@@ -202,7 +202,7 @@
       </div>
     </div>
   </section>
-
+  <hr class="container">
   <section id="recent-blog">
     <div class="px-4">
       <div class="container py-5">
@@ -284,74 +284,73 @@
     </div>
   </section>
 
-  <section id="contact">
-    <div class="px-4">
-      <div class="container py-5">
-        <h1 class="display-5 fw-bold mb-4 text-center">Hubungi kami</h1>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-lg-8 mx-auto mb-4">
-                <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="floatingInputNama" placeholder="Nama anda">
-                  <label for="floatingInputNama">Nama</label>
-                </div>
-                <div class="form-floating mb-3">
-                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                  <label for="floatingInput">Alamat email</label>
-                </div>
-                <div class="form-floating mb-3">
-                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 200px;"></textarea>
-                  <label for="floatingTextarea">Pesan</label>
-                </div>
-                <button type="button" class="btn btn-primary">Kirim</button>
-              </div>
+  <section id="pesan" class="bg-dark bg-gradient-dark container-fluid text-white">
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+      <div class="row align-items-center g-lg-5 py-5">
+        <div class="col-lg-7 text-center text-lg-start">
+          <h1 class="display-4 fw-bold lh-1 mb-3">Hubungi kami</h1>
+          <p class="col-lg-10 fs-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae reiciendis maxime odit perspiciatis architecto commodi amet eius esse placeat, ipsa porro delectus dolores officia sequi eos veniam non eligendi fugit.</p>
+        </div>
+        <div class="col-md-10 mx-auto col-lg-5">
+          <form class="p-2 p-md-4 border rounded-3 bg-light text-dark">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingInputNama" placeholder="Nama anda">
+              <label for="floatingInputNama">Nama</label>
             </div>
-          </div>
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col mb-4">
-                <a href="https://wa.me/62087839301572" target="_blank" class="text-success text-center text-decoration-none d-flex flex-column">
-                  <span class="icon">
-                    <i class="fa-brands fa-whatsapp fa-fw fa-4x"></i>
-                  </span>
-                  <span class="fw-bold">087839301572</span>
-                </a>
-              </div>
-              <div class="col mb-4">
-                <a href="https://t.me/mesaidlg" target="_blank" class="text-info text-center text-decoration-none d-flex flex-column">
-                  <span class="icon">
-                    <i class="fa-brands fa-telegram fa-fw fa-4x"></i>
-                  </span>
-                  <span class="fw-bold">@mesaidlg</span>
-                </a>
-              </div>
-              <div class="col mb-4">
-                <a href="https://facebook.com/mesaidlg" target="_blank" class="text-primary text-center text-decoration-none d-flex flex-column">
-                  <span class="icon">
-                    <i class="fa-brands fa-facebook-messenger fa-fw fa-4x"></i>
-                  </span>
-                  <span class="fw-bold">@mesaidlg</span>
-                </a>
-              </div>
-              <div class="col mb-4">
-                <a href="mailto:hi@example.com" target="_blank" class="text-warning text-center text-decoration-none d-flex flex-column">
-                  <span class="icon">
-                    <i class="fa-solid fa-envelope fa-fw fa-4x"></i>
-                  </span>
-                  <span class="fw-bold">hi@example.com</span>
-                </a>
-              </div>
-              <div class="col mb-4">
-                <a href="tel:+62274000000" target="_blank" class="text-secondary text-center text-decoration-none d-flex flex-column">
-                  <span class="icon">
-                    <i class="fa-solid fa-square-phone fa-fw fa-4x"></i>
-                  </span>
-                  <span class="fw-bold">(0274) 000000</span>
-                </a>
-              </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Alamat email</label>
             </div>
-          </div>
+            <div class="form-floating mb-3">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px;"></textarea>
+              <label for="floatingTextarea">Pesan</label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="button">Kirim</button>
+            <hr class="my-4">
+            <small class="text-muted">Informasi pribadi yang anda berikan kami jamin keamanan dan kerahasiannya.</small>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col mb-4">
+          <a href="https://wa.me/62087839301572" target="_blank" class="text-center text-white text-decoration-none d-flex flex-column">
+            <span class="icon">
+              <i class="fa-brands fa-whatsapp fa-fw fa-3x"></i>
+            </span>
+            <span class="fw-bold">087839301572</span>
+          </a>
+        </div>
+        <div class="col mb-4">
+          <a href="https://t.me/mesaidlg" target="_blank" class="text-center text-white text-decoration-none d-flex flex-column">
+            <span class="icon">
+              <i class="fa-brands fa-telegram fa-fw fa-3x"></i>
+            </span>
+            <span class="fw-bold">@mesaidlg</span>
+          </a>
+        </div>
+        <div class="col mb-4">
+          <a href="https://facebook.com/mesaidlg" target="_blank" class="text-center text-white text-decoration-none d-flex flex-column">
+            <span class="icon">
+              <i class="fa-brands fa-facebook-messenger fa-fw fa-3x"></i>
+            </span>
+            <span class="fw-bold">@mesaidlg</span>
+          </a>
+        </div>
+        <div class="col mb-4">
+          <a href="mailto:hi@example.com" target="_blank" class="text-center text-white text-decoration-none d-flex flex-column">
+            <span class="icon">
+              <i class="fa-solid fa-envelope fa-fw fa-3x"></i>
+            </span>
+            <span class="fw-bold">hi@example.com</span>
+          </a>
+        </div>
+        <div class="col mb-4">
+          <a href="tel:+62274000000" target="_blank" class="text-center text-white text-decoration-none d-flex flex-column">
+            <span class="icon">
+              <i class="fa-solid fa-square-phone fa-fw fa-3x"></i>
+            </span>
+            <span class="fw-bold">(0274) 000000</span>
+          </a>
         </div>
       </div>
     </div>
