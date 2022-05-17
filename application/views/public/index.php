@@ -21,17 +21,12 @@
       height: 150px;
     }
 
-    .cor .navbar {
+    .navbar {
       min-height: 5rem;
     }
 
     .icon_link {
       text-decoration: none;
-    }
-
-    .featured-blog {
-      height: 330px;
-      object-fit: cover;
     }
 
     @media (max-width: 320px) {
@@ -234,7 +229,7 @@
             <div class="list-group shadow">
               <a href="#!" class="list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">Judul Postingan</h5>
+                  <h5 class="mb-1">Judul Postingan 1</h5>
                   <small><i class="fa-solid fa-calendar-days fa-fw me-2"></i>21/05/2022</small>
                 </div>
                 <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis iure ab quia libero pariatur obcaecati!</p>
@@ -242,7 +237,7 @@
               </a>
               <a href="#!" class="list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">Judul Postingan</h5>
+                  <h5 class="mb-1">Judul Postingan 2</h5>
                   <small class="text-muted"><i class="fa-solid fa-calendar-days fa-fw me-2"></i>21/05/2022</small>
                 </div>
                 <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis iure ab quia libero pariatur obcaecati!</p>
@@ -250,7 +245,7 @@
               </a>
               <a href="#!" class="list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">Judul Postingan</h5>
+                  <h5 class="mb-1">Judul Postingan 3</h5>
                   <small class="text-muted"><i class="fa-solid fa-calendar-days fa-fw me-2"></i>21/05/2022</small>
                 </div>
                 <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis iure ab quia libero pariatur obcaecati!</p>
@@ -258,7 +253,7 @@
               </a>
               <a href="#!" class="list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">Judul Postingan</h5>
+                  <h5 class="mb-1">Judul Postingan 4</h5>
                   <small class="text-muted"><i class="fa-solid fa-calendar-days fa-fw me-2"></i>21/05/2022</small>
                 </div>
                 <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis iure ab quia libero pariatur obcaecati!</p>
@@ -414,6 +409,10 @@
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="<?= base_url('assets/plugins/bootstrap/js/bootstrap.bundle.min.js'); ?>"></script>
+
+  <script>
+
+  </script>
 </body>
 
 </html>
