@@ -42,14 +42,14 @@
       }
     }
   </style>
-  <title>#SMP-Demo</title>
+  <title>Landing Page by @mesaidlg</title>
 </head>
 
 <body>
   <!-- <section id="navbar"> -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
     <div class="container px-4">
-      <a class="navbar-brand" href="#">#SMP-Demo</a>
+      <a class="navbar-brand" href="#">Your Company</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -59,35 +59,33 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Tentang</a>
+            <a class="nav-link" href="#">Link</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-              Informasi
+              Dropdown
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Berita</a></li>
+              <li><a class="dropdown-item" href="#">Level 1</a></li>
               <li class="dropend">
-                <a class="dropdown-item dropdown-toggle" id="navbarDropdown2" href="#" data-bs-toggle="dropdown">Pengumuman</a>
+                <a class="dropdown-item dropdown-toggle" id="navbarDropdown2" href="#" data-bs-toggle="dropdown">Sub Menu</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                  <li><a class="dropdown-item" href="#">Berita</a></li>
+                  <li><a class="dropdown-item" href="#">Level 2</a></li>
                 </ul>
               </li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">Unduhan</a></li>
+              <li><a class="dropdown-item" href="#">Level 1</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#!">Layanan</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#!">Kontak</a>
+            <a class="nav-link disabled" href="#!">Disabled</a>
           </li>
         </ul>
         <form class="d-flex">
-          <input class="form-control me-2" type="text" placeholder="Cari postingan" aria-label="Search">
+          <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
       </div>
     </div>
@@ -129,7 +127,7 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <h1 class="display-5 fw-bold mb-4 lh-1 mb-3">Selamat Datang di SMP Demo</h1>
+          <h1 class="display-5 fw-bold mb-4 lh-1 mb-3">Welcome to our website</h1>
           <p class="lead fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, itaque aspernatur molestiae sapiente esse eos labore. Dignissimos similique numquam aliquid reiciendis, dolorem corporis laudantium ipsum. Laudantium enim architecto recusandae obcaecati?</p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
             <a href="#!" class="btn btn-primary btn-lg px-4">Link</a>
@@ -141,6 +139,7 @@
 
   <section id="feature">
     <div class="container px-4">
+      <h1 class="display-5 fw-bold mb-4 text-center">Our Service</h1>
       <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
         <div class="col">
           <div class="d-flex justify-content-center mb-3">
@@ -179,7 +178,7 @@
   <section id="about">
     <div class="px-4 bg-dark text-white rounded-3">
       <div class="container py-5">
-        <h1 class="display-5 fw-bold mb-4">Sekilas tentang kami</h1>
+        <h1 class="display-5 fw-bold mb-4">Dark section</h1>
         <p class="col-md-12 fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda temporibus totam debitis libero optio saepe nam dolorum repellendus nisi nobis sunt impedit officiis aspernatur architecto sit itaque aliquid corporis, ea labore vero asperiores dolore. Nam at dolor placeat reiciendis numquam ab ratione doloremque facilis culpa id. Iure, consectetur? Eligendi, tenetur.</p>
         <a href="#!" class="btn btn-primary btn-lg">Link</a>
       </div>
@@ -189,7 +188,7 @@
   <section id="kepala-sekolah">
     <div class="px-4 bg-light rounded-3">
       <div class="container py-5">
-        <h1 class="display-5 fw-bold mb-4">Sambutan Kepala Sekolah</h1>
+        <h1 class="display-5 fw-bold mb-4">About Us</h1>
         <div class="row">
           <div class="col-md-8">
             <p class="fs-4 mb-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores cumque aliquam, dolorum eaque illo repellendus veniam eligendi cum fugiat tenetur porro temporibus ab inventore aspernatur consectetur ex ratione quos exercitationem repudiandae eveniet delectus laboriosam eum. Pariatur, adipisci? Atque, voluptatum voluptate iste nostrum, corporis aut numquam aliquam repudiandae maiores, dolor nemo delectus velit. Maiores necessitatibus et totam dicta nostrum illo nihil quia dolorem sint harum velit modi, ducimus expedita architecto provident unde beatae culpa error sequi sapiente iure corrupti dignissimos debitis? Tenetur consectetur ratione quos deleniti nobis reprehenderit labore voluptatum exercitationem, eius molestiae iusto aspernatur sapiente culpa suscipit laudantium iste quasi.</p>
@@ -202,11 +201,13 @@
       </div>
     </div>
   </section>
+
   <hr class="container">
+
   <section id="recent-blog">
     <div class="px-4">
       <div class="container py-5">
-        <h1 class="display-5 fw-bold mb-5">Postingan terakhir</h1>
+        <h1 class="display-5 fw-bold mb-5">Last Blog</h1>
         <div class="row">
           <div class="col-md-8">
             <div class="container">
@@ -214,13 +215,13 @@
                 <img src="<?= base_url('assets/global/images/image_sample_post_1.png'); ?>" class="featured-blog" alt="...">
                 <div class="card-body">
                   <div class="d-flex w-100 justify-content-between">
-                    <h5 class="card-title">Judul postingan</h5>
-                    <h6>Berita</h6>
+                    <h5 class="card-title">Title 1</h5>
+                    <h6>Category 1</h6>
                   </div>
                   <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima numquam ab distinctio quos vero ullam. Ipsum, voluptatum. Dicta aperiam esse molestiae repellendus, corporis ea, explicabo facilis omnis accusantium consequatur voluptatem?</p>
                   <div class="d-flex justify-content-between">
-                    <small class="text-primary"><i class="fa-solid fa-calendar-days fa-fw me-2"></i>21/05/2022</small>
-                    <small class="text-success"><i class="fa-solid fa-user-pen fa-fw me-2"></i>mesaidlg</small>
+                    <small class="text-primary"><i class="fa-solid fa-calendar-days fa-fw me-2"></i><span id="date">05/21/2022</span></small>
+                    <small class="text-success"><i class="fa-solid fa-user-pen fa-fw me-2"></i><span id="author">mesaidlg</span></small>
                   </div>
                 </div>
               </div>
@@ -231,52 +232,52 @@
               <a href="#!" class="list-group-item list-group-item-action">
                 <img src="<?= base_url('assets/global/images/image_sample_post_2.png'); ?>" class="featured-blog d-none" alt="...">
                 <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">Judul Postingan 1</h5>
-                  <small class="text-muted"><i class="fa-solid fa-calendar-days fa-fw me-2"></i>21/05/2022</small>
+                  <h5 class="mb-1">Title 2</h5>
+                  <small class="text-muted"><i class="fa-solid fa-calendar-days fa-fw me-2"></i><span id="date">04/22/2022</span></small>
                 </div>
                 <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, minima?</p>
                 <div class="d-flex w-100 justify-content-between">
-                  <small class="text-muted me-2"><i class="fa-solid fa-user-pen fa-fw me-1"></i>mesaidlg</small>
-                  <small class="text-muted"><i class="fa-solid fa-bookmark fa-fw me-1"></i>Berita</small>
+                  <small class="text-muted me-2"><i class="fa-solid fa-user-pen fa-fw me-1"></i><span id="author">mesaidlg</span></small>
+                  <small class="text-muted"><i class="fa-solid fa-bookmark fa-fw me-1"></i><span id="category">Category 2</span></small>
                 </div>
               </a>
               <a href="#!" class="list-group-item list-group-item-action">
                 <img src="<?= base_url('assets/global/images/image_sample_post_3.png'); ?>" class="featured-blog d-none" alt="...">
                 <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">Judul Postingan 2</h5>
-                  <small class="text-muted"><i class="fa-solid fa-calendar-days fa-fw me-2"></i>20/04/2022</small>
+                  <h5 class="mb-1">Title 3</h5>
+                  <small class="text-muted"><i class="fa-solid fa-calendar-days fa-fw me-2"></i><span id="date">03/23/2022</span></small>
                 </div>
                 <p class="mb-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, reprehenderit?</p>
                 <div class="d-flex w-100 justify-content-between">
-                  <small class="text-muted me-2"><i class="fa-solid fa-user-pen fa-fw me-1"></i>afrel</small>
-                  <small class="text-muted"><i class="fa-solid fa-bookmark fa-fw me-1"></i>Galeri</small>
+                  <small class="text-muted me-2"><i class="fa-solid fa-user-pen fa-fw me-1"></i><span id="author">afrel</span></small>
+                  <small class="text-muted"><i class="fa-solid fa-bookmark fa-fw me-1"></i><span id="category">Category 3</span></small>
                 </div>
               </a>
               <a href="#!" class="list-group-item list-group-item-action">
                 <img src="<?= base_url('assets/global/images/image_sample_post_4.png'); ?>" class="featured-blog d-none" alt="...">
                 <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">Judul Postingan 3</h5>
-                  <small class="text-muted"><i class="fa-solid fa-calendar-days fa-fw me-2"></i>25/02/2022</small>
+                  <h5 class="mb-1">Title 4</h5>
+                  <small class="text-muted"><i class="fa-solid fa-calendar-days fa-fw me-2"></i><span id="date">02/24/2022</span></small>
                 </div>
                 <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, unde!</p>
                 <div class="d-flex w-100 justify-content-between">
-                  <small class="text-muted me-2"><i class="fa-solid fa-user-pen fa-fw me-1"></i>keano</small>
-                  <small class="text-muted"><i class="fa-solid fa-bookmark fa-fw me-1"></i>Unduhan</small>
+                  <small class="text-muted me-2"><i class="fa-solid fa-user-pen fa-fw me-1"></i><span id="author">keano</span></small>
+                  <small class="text-muted"><i class="fa-solid fa-bookmark fa-fw me-1"></i><span id="category">Category 4</span></small>
                 </div>
               </a>
               <a href="#!" class="list-group-item list-group-item-action">
                 <img src="<?= base_url('assets/global/images/image_sample_post_5.png'); ?>" class="featured-blog d-none" alt="...">
                 <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">Judul Postingan 4</h5>
-                  <small class="text-muted"><i class="fa-solid fa-calendar-days fa-fw me-2"></i>09/01/2022</small>
+                  <h5 class="mb-1">Title 5</h5>
+                  <small class="text-muted"><i class="fa-solid fa-calendar-days fa-fw me-2"></i><span id="date">01/25/2022</span></small>
                 </div>
                 <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, neque?</p>
                 <div class="d-flex w-100 justify-content-between">
-                  <small class="text-muted me-2"><i class="fa-solid fa-user-pen fa-fw me-1"></i>rafisqy</small>
-                  <small class="text-muted"><i class="fa-solid fa-bookmark fa-fw me-1"></i>Pengumuman</small>
+                  <small class="text-muted me-2"><i class="fa-solid fa-user-pen fa-fw me-1"></i><span id="author">rafisqy</span></small>
+                  <small class="text-muted"><i class="fa-solid fa-bookmark fa-fw me-1"></i><span id="category">Category 5</span></small>
                 </div>
               </a>
-              <a href="#" class="list-group-item list-group-item-action text-center bg-primary text-white">Selengkapnya</a>
+              <a href="#" class="list-group-item list-group-item-action text-center bg-primary text-white">Other Blogs</a>
             </div>
           </div>
         </div>
@@ -284,73 +285,73 @@
     </div>
   </section>
 
-  <section id="pesan" class="bg-dark bg-gradient-dark container-fluid text-white">
-    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
-      <div class="row align-items-center g-lg-5 py-5">
-        <div class="col-lg-7 text-center text-lg-start">
-          <h1 class="display-4 fw-bold lh-1 mb-3">Hubungi kami</h1>
-          <p class="col-lg-10 fs-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae reiciendis maxime odit perspiciatis architecto commodi amet eius esse placeat, ipsa porro delectus dolores officia sequi eos veniam non eligendi fugit.</p>
+  <section id="contact">
+    <div class="bg-dark bg-gradient-dark container-fluid text-white">
+      <div class="mx-auto col-xl-10 col-xxl-8 px-4 py-5">
+        <div class="row align-items-center g-lg-5 py-5">
+          <div class="col-lg-7 text-center text-lg-start">
+            <h1 class="display-4 fw-bold lh-1 mb-3">Contact Us</h1>
+            <p class="col-lg-10 fs-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae reiciendis maxime odit perspiciatis architecto commodi amet eius esse placeat, ipsa porro delectus dolores officia sequi eos veniam non eligendi fugit.</p>
+          </div>
+          <div class="col-md-10 mx-auto col-lg-5">
+            <form class="p-2 p-md-4 border rounded-3 bg-light text-dark">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInputName" placeholder="Name anda">
+                <label for="floatingInputName">Name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email Address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px;"></textarea>
+                <label for="floatingTextarea">Message</label>
+              </div>
+              <button class="w-100 btn btn-lg btn-primary mb-2" type="button">Send</button>
+            </form>
+          </div>
         </div>
-        <div class="col-md-10 mx-auto col-lg-5">
-          <form class="p-2 p-md-4 border rounded-3 bg-light text-dark">
-            <div class="form-floating mb-3">
-              <input type="text" class="form-control" id="floatingInputNama" placeholder="Nama anda">
-              <label for="floatingInputNama">Nama</label>
-            </div>
-            <div class="form-floating mb-3">
-              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-              <label for="floatingInput">Alamat email</label>
-            </div>
-            <div class="form-floating mb-3">
-              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px;"></textarea>
-              <label for="floatingTextarea">Pesan</label>
-            </div>
-            <button class="w-100 btn btn-lg btn-primary" type="button">Kirim</button>
-            <hr class="my-4">
-            <small class="text-muted">Informasi pribadi yang anda berikan kami jamin keamanan dan kerahasiannya.</small>
-          </form>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col mb-4">
-          <a href="https://wa.me/62087839301572" target="_blank" class="text-center text-white text-decoration-none d-flex flex-column">
-            <span class="icon">
-              <i class="fa-brands fa-whatsapp fa-fw fa-3x"></i>
-            </span>
-            <span class="fw-bold">087839301572</span>
-          </a>
-        </div>
-        <div class="col mb-4">
-          <a href="https://t.me/mesaidlg" target="_blank" class="text-center text-white text-decoration-none d-flex flex-column">
-            <span class="icon">
-              <i class="fa-brands fa-telegram fa-fw fa-3x"></i>
-            </span>
-            <span class="fw-bold">@mesaidlg</span>
-          </a>
-        </div>
-        <div class="col mb-4">
-          <a href="https://facebook.com/mesaidlg" target="_blank" class="text-center text-white text-decoration-none d-flex flex-column">
-            <span class="icon">
-              <i class="fa-brands fa-facebook-messenger fa-fw fa-3x"></i>
-            </span>
-            <span class="fw-bold">@mesaidlg</span>
-          </a>
-        </div>
-        <div class="col mb-4">
-          <a href="mailto:hi@example.com" target="_blank" class="text-center text-white text-decoration-none d-flex flex-column">
-            <span class="icon">
-              <i class="fa-solid fa-envelope fa-fw fa-3x"></i>
-            </span>
-            <span class="fw-bold">hi@example.com</span>
-          </a>
-        </div>
-        <div class="col mb-4">
-          <a href="tel:+62274000000" target="_blank" class="text-center text-white text-decoration-none d-flex flex-column">
-            <span class="icon">
-              <i class="fa-solid fa-square-phone fa-fw fa-3x"></i>
-            </span>
-            <span class="fw-bold">(0274) 000000</span>
-          </a>
+        <div class="row">
+          <div class="col mb-4">
+            <a href="#" target="_blank" class="text-center text-white text-decoration-none d-flex flex-column">
+              <span class="icon">
+                <i class="fa-brands fa-whatsapp fa-fw fa-3x"></i>
+              </span>
+              <span class="fw-bold">08xxxxxxxxxx</span>
+            </a>
+          </div>
+          <div class="col mb-4">
+            <a href="#" target="_blank" class="text-center text-white text-decoration-none d-flex flex-column">
+              <span class="icon">
+                <i class="fa-brands fa-telegram fa-fw fa-3x"></i>
+              </span>
+              <span class="fw-bold">@username</span>
+            </a>
+          </div>
+          <div class="col mb-4">
+            <a href="#" target="_blank" class="text-center text-white text-decoration-none d-flex flex-column">
+              <span class="icon">
+                <i class="fa-brands fa-facebook-messenger fa-fw fa-3x"></i>
+              </span>
+              <span class="fw-bold">@username</span>
+            </a>
+          </div>
+          <div class="col mb-4">
+            <a href="mailto:hi@example.com" target="_blank" class="text-center text-white text-decoration-none d-flex flex-column">
+              <span class="icon">
+                <i class="fa-solid fa-envelope fa-fw fa-3x"></i>
+              </span>
+              <span class="fw-bold">hi@example.com</span>
+            </a>
+          </div>
+          <div class="col mb-4">
+            <a href="tel:+62274000000" target="_blank" class="text-center text-white text-decoration-none d-flex flex-column">
+              <span class="icon">
+                <i class="fa-solid fa-square-phone fa-fw fa-3x"></i>
+              </span>
+              <span class="fw-bold">(0000) 000000</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -358,7 +359,7 @@
 
   <section id="maps">
     <div class="container-fluid py-5">
-      <h1 class="display-5 fw-bold mb-4 text-center">Temukan kami</h1>
+      <h1 class="display-5 fw-bold mb-4 text-center">Find Us</h1>
       <div class="row">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.1076712619306!2d110.37024531456463!3d-7.7784069943942455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x46555c753b233f54!2zN8KwNDYnNDIuMyJTIDExMMKwMjInMjAuOCJF!5e0!3m2!1sid!2sid!4v1652762088410!5m2!1sid!2sid" height="600" class="m-0 p-0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
@@ -369,58 +370,57 @@
     <footer class="pt-5">
       <div class="row">
         <div class="col-md-2 mb-4">
-          <h5>SMP Demo</h5>
+          <h5>Your Company</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy Policies</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Akademik</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Kesiswaan</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sarana Prasarana</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Humas</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Carier</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Term of Service</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">etc</a></li>
           </ul>
         </div>
         <div class="col-md-2 mb-4">
-          <h5>Kategori Populer</h5>
+          <h5>Category</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Berita</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Galeri</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pengumuman</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tutorial</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Surat Edaran</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Link</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Link</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Link</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Link</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Link</a></li>
           </ul>
         </div>
 
         <div class="col-md-2 mb-4">
-          <h5>Tags Populer</h5>
+          <h5>Tags</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">#JadwalPelajaran</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">#KuotaGratis</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">#Lomba</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">#tryoutASPD</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">#hutSMPDemo</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tag 1</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tag 2</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tag 3</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tag 4</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tag 5</a></li>
           </ul>
         </div>
 
         <div class="col-md-2 mb-4">
-          <h5>Tautan</h5>
+          <h5>Links</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Kemdikbud</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Dapodikdasmen</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Info GTK</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sekolah Kita</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Dinas Pendidikan</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Link</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Link</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Link</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Link</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Link</a></li>
           </ul>
         </div>
 
-        <div class="col-md-4">
-          <img src="<?= base_url('assets/global/images/default_logo.png'); ?>" alt="Logo SMP Demo" width="100" class="img-thumbnail mb-2">
-          <h5>SMP DEMO</h5>
-          <p>Alamat lengkap, Nama Jalan, Nama Desa, Nama Kecamatan, Nama Kabupaten/Kota, Nama Provinsi, Kode Pos</p>
+        <div div class="col-md-4">
+          <img src="<?= base_url('assets/global/images/default_logo.png'); ?>" alt="Logo" width="100" class="img-thumbnail mb-2">
+          <h5>Your Company</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magni dolore tempore laborum nemo nihil!</p>
         </div>
       </div>
 
       <div class="d-flex justify-content-between pt-4 my-2 border-top">
-        <p>© 2022 <a href="<?= base_url(); ?>" target="_blank" class="text-dark text-decoration-none">SMP Demo</a>. Create and Development by <a href="https://me-digital.net" target="_blank" class="text-dark text-decoration-none" title="me-digital.net"><img src="<?= base_url('assets/global/images/favicon.png'); ?>" height="25" alt="Logo me-digital.net"></a></p>
+        <p>&copy; 2022 <a href="<?= base_url(); ?>" target="_blank" class="text-dark text-decoration-none">Your Company</a>. Design by <a href="https://github.com/mesaidlg" target="_blank" class="text-dark text-decoration-none"><i class="fa-brands fa-github fa-lg me-1"></i>@mesaidlg</a> base on <a href="https://getbootstrap.com" class="text-dark text-decoration-none" target="_blank"><i class="fa-brands fa-bootstrap fa-lg me-1"></i>Bootstrap</a></p>
         <ul class="list-unstyled d-flex">
           <li class="ms-3">
             <a class="link-dark" href="#">
@@ -461,7 +461,10 @@
     $('.list-group-item').click(function(e) {
       e.preventDefault();
       $('#featured_post h5').text($(this).find('h5').text());
+      $('#featured_post h6').text($(this).find('span#category').text());
       $('#featured_post p').text($(this).find('p').text());
+      $('#featured_post #date').text($(this).find('span#date').text());
+      $('#featured_post #author').text($(this).find('span#author').text());
       $('#featured_post img').attr('src', $(this).find('img').attr('src'));
       document.location.href = '#recent-blog';
     });
