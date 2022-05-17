@@ -210,12 +210,12 @@
         <div class="row">
           <div class="col-md-8">
             <div class="container">
-              <div class="card shadow mb-3">
-                <img src="<?= base_url('assets/global/images/image-sample-post.png'); ?>" class="featured-blog" alt="...">
+              <div class="card shadow mb-3" id="featured_post">
+                <img src="<?= base_url('assets/global/images/image_sample_post_1.png'); ?>" class="featured-blog" alt="...">
                 <div class="card-body">
                   <div class="d-flex w-100 justify-content-between">
                     <h5 class="card-title">Judul postingan</h5>
-                    <h5 class="card-title">Berita</h5>
+                    <h6>Berita</h6>
                   </div>
                   <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima numquam ab distinctio quos vero ullam. Ipsum, voluptatum. Dicta aperiam esse molestiae repellendus, corporis ea, explicabo facilis omnis accusantium consequatur voluptatem?</p>
                   <div class="d-flex justify-content-between">
@@ -229,35 +229,39 @@
           <div class="col-md-4">
             <div class="list-group shadow">
               <a href="#!" class="list-group-item list-group-item-action">
+                <img src="<?= base_url('assets/global/images/image_sample_post_2.png'); ?>" class="featured-blog d-none" alt="...">
                 <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1" id="judul">Judul Postingan 1</h5>
+                  <h5 class="mb-1">Judul Postingan 1</h5>
                   <small><i class="fa-solid fa-calendar-days fa-fw me-2"></i>21/05/2022</small>
                 </div>
-                <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis iure ab quia libero pariatur obcaecati!</p>
-                <small><i class="fa-solid fa-user-pen fa-fw me-2"></i>mesaidlg</small>
-              </a>
-              <a href="#!" class="list-group-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1" id="judul">Judul Postingan 2</h5>
-                  <small class="text-muted"><i class="fa-solid fa-calendar-days fa-fw me-2"></i>21/05/2022</small>
-                </div>
-                <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis iure ab quia libero pariatur obcaecati!</p>
+                <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore corporis quod earum assumenda repellendus distinctio magnam perferendis cupiditate error fugiat.</p>
                 <small class="text-muted"><i class="fa-solid fa-user-pen fa-fw me-2"></i>mesaidlg</small>
               </a>
               <a href="#!" class="list-group-item list-group-item-action">
+                <img src="<?= base_url('assets/global/images/image_sample_post_3.png'); ?>" class="featured-blog d-none" alt="...">
                 <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1" id="judul">Judul Postingan 3</h5>
+                  <h5 class="mb-1">Judul Postingan 2</h5>
                   <small class="text-muted"><i class="fa-solid fa-calendar-days fa-fw me-2"></i>21/05/2022</small>
                 </div>
-                <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis iure ab quia libero pariatur obcaecati!</p>
+                <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptas et fuga? Eius, magnam commodi! Illum repellat officia enim exercitationem corrupti.</p>
                 <small class="text-muted"><i class="fa-solid fa-user-pen fa-fw me-2"></i>mesaidlg</small>
               </a>
               <a href="#!" class="list-group-item list-group-item-action">
+                <img src="<?= base_url('assets/global/images/image_sample_post_4.png'); ?>" class="featured-blog d-none" alt="...">
                 <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1" id="judul">Judul Postingan 4</h5>
+                  <h5 class="mb-1">Judul Postingan 3</h5>
                   <small class="text-muted"><i class="fa-solid fa-calendar-days fa-fw me-2"></i>21/05/2022</small>
                 </div>
-                <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis iure ab quia libero pariatur obcaecati!</p>
+                <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, provident aperiam! Ducimus tempore est qui autem? Cum maiores explicabo mollitia eum odio?</p>
+                <small class="text-muted"><i class="fa-solid fa-user-pen fa-fw me-2"></i>mesaidlg</small>
+              </a>
+              <a href="#!" class="list-group-item list-group-item-action">
+                <img src="<?= base_url('assets/global/images/image_sample_post_5.png'); ?>" class="featured-blog d-none" alt="...">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Judul Postingan 4</h5>
+                  <small class="text-muted"><i class="fa-solid fa-calendar-days fa-fw me-2"></i>21/05/2022</small>
+                </div>
+                <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa commodi laborum provident eaque, numquam molestias, ad quas doloribus adipisci corrupti molestiae error! Itaque!</p>
                 <small class="text-muted"><i class="fa-solid fa-user-pen fa-fw me-2"></i>mesaidlg</small>
               </a>
               <a href="#" class="list-group-item list-group-item-action text-center bg-primary text-white">Selengkapnya</a>
@@ -369,7 +373,6 @@
           <img src="<?= base_url('assets/global/images/default_logo.png'); ?>" alt="Logo SMP Demo" width="100" class="img-thumbnail mb-2">
           <h5>SMP DEMO</h5>
           <p>Alamat lengkap, Nama Jalan, Nama Desa, Nama Kecamatan, Nama Kabupaten/Kota, Nama Provinsi, Kode Pos</p>
-
         </div>
       </div>
 
@@ -414,7 +417,10 @@
   <script>
     $('.list-group-item').click(function(e) {
       e.preventDefault();
-      console.log($(this).find('h5').text());
+      $('#featured_post h5').text($(this).find('h5').text());
+      $('#featured_post p').text($(this).find('p').text());
+      $('#featured_post img').attr('src', $(this).find('img').attr('src'));
+      document.location.href = '#recent-blog';
     });
   </script>
 </body>
