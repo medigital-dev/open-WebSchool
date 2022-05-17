@@ -232,37 +232,49 @@
                 <img src="<?= base_url('assets/global/images/image_sample_post_2.png'); ?>" class="featured-blog d-none" alt="...">
                 <div class="d-flex w-100 justify-content-between">
                   <h5 class="mb-1">Judul Postingan 1</h5>
-                  <small><i class="fa-solid fa-calendar-days fa-fw me-2"></i>21/05/2022</small>
+                  <small class="text-muted"><i class="fa-solid fa-calendar-days fa-fw me-2"></i>21/05/2022</small>
                 </div>
-                <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore corporis quod earum assumenda repellendus distinctio magnam perferendis cupiditate error fugiat.</p>
-                <small class="text-muted"><i class="fa-solid fa-user-pen fa-fw me-2"></i>mesaidlg</small>
+                <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, minima?</p>
+                <div class="d-flex w-100 justify-content-between">
+                  <small class="text-muted me-2"><i class="fa-solid fa-user-pen fa-fw me-1"></i>mesaidlg</small>
+                  <small class="text-muted"><i class="fa-solid fa-bookmark fa-fw me-1"></i>Berita</small>
+                </div>
               </a>
               <a href="#!" class="list-group-item list-group-item-action">
                 <img src="<?= base_url('assets/global/images/image_sample_post_3.png'); ?>" class="featured-blog d-none" alt="...">
                 <div class="d-flex w-100 justify-content-between">
                   <h5 class="mb-1">Judul Postingan 2</h5>
-                  <small class="text-muted"><i class="fa-solid fa-calendar-days fa-fw me-2"></i>21/05/2022</small>
+                  <small class="text-muted"><i class="fa-solid fa-calendar-days fa-fw me-2"></i>20/04/2022</small>
                 </div>
-                <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptas et fuga? Eius, magnam commodi! Illum repellat officia enim exercitationem corrupti.</p>
-                <small class="text-muted"><i class="fa-solid fa-user-pen fa-fw me-2"></i>mesaidlg</small>
+                <p class="mb-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, reprehenderit?</p>
+                <div class="d-flex w-100 justify-content-between">
+                  <small class="text-muted me-2"><i class="fa-solid fa-user-pen fa-fw me-1"></i>afrel</small>
+                  <small class="text-muted"><i class="fa-solid fa-bookmark fa-fw me-1"></i>Galeri</small>
+                </div>
               </a>
               <a href="#!" class="list-group-item list-group-item-action">
                 <img src="<?= base_url('assets/global/images/image_sample_post_4.png'); ?>" class="featured-blog d-none" alt="...">
                 <div class="d-flex w-100 justify-content-between">
                   <h5 class="mb-1">Judul Postingan 3</h5>
-                  <small class="text-muted"><i class="fa-solid fa-calendar-days fa-fw me-2"></i>21/05/2022</small>
+                  <small class="text-muted"><i class="fa-solid fa-calendar-days fa-fw me-2"></i>25/02/2022</small>
                 </div>
-                <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, provident aperiam! Ducimus tempore est qui autem? Cum maiores explicabo mollitia eum odio?</p>
-                <small class="text-muted"><i class="fa-solid fa-user-pen fa-fw me-2"></i>mesaidlg</small>
+                <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, unde!</p>
+                <div class="d-flex w-100 justify-content-between">
+                  <small class="text-muted me-2"><i class="fa-solid fa-user-pen fa-fw me-1"></i>keano</small>
+                  <small class="text-muted"><i class="fa-solid fa-bookmark fa-fw me-1"></i>Unduhan</small>
+                </div>
               </a>
               <a href="#!" class="list-group-item list-group-item-action">
                 <img src="<?= base_url('assets/global/images/image_sample_post_5.png'); ?>" class="featured-blog d-none" alt="...">
                 <div class="d-flex w-100 justify-content-between">
                   <h5 class="mb-1">Judul Postingan 4</h5>
-                  <small class="text-muted"><i class="fa-solid fa-calendar-days fa-fw me-2"></i>21/05/2022</small>
+                  <small class="text-muted"><i class="fa-solid fa-calendar-days fa-fw me-2"></i>09/01/2022</small>
                 </div>
-                <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa commodi laborum provident eaque, numquam molestias, ad quas doloribus adipisci corrupti molestiae error! Itaque!</p>
-                <small class="text-muted"><i class="fa-solid fa-user-pen fa-fw me-2"></i>mesaidlg</small>
+                <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, neque?</p>
+                <div class="d-flex w-100 justify-content-between">
+                  <small class="text-muted me-2"><i class="fa-solid fa-user-pen fa-fw me-1"></i>rafisqy</small>
+                  <small class="text-muted"><i class="fa-solid fa-bookmark fa-fw me-1"></i>Pengumuman</small>
+                </div>
               </a>
               <a href="#" class="list-group-item list-group-item-action text-center bg-primary text-white">Selengkapnya</a>
             </div>
@@ -277,47 +289,79 @@
       <div class="container py-5">
         <h1 class="display-5 fw-bold mb-4 text-center">Hubungi kami</h1>
         <div class="row">
-          <div class="col mb-4">
-            <a href="https://wa.me/62087839301572" target="_blank" class="text-success text-center text-decoration-none d-flex flex-column">
-              <span class="icon">
-                <i class="fa-brands fa-whatsapp fa-fw fa-6x"></i>
-              </span>
-              <span class="fw-bold">087839301572</span>
-            </a>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-lg-8 mx-auto mb-4">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="floatingInputNama" placeholder="Nama anda">
+                  <label for="floatingInputNama">Nama</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Alamat email</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 200px;"></textarea>
+                  <label for="floatingTextarea">Pesan</label>
+                </div>
+                <button type="button" class="btn btn-primary">Kirim</button>
+              </div>
+            </div>
           </div>
-          <div class="col mb-4">
-            <a href="https://t.me/mesaidlg" target="_blank" class="text-info text-center text-decoration-none d-flex flex-column">
-              <span class="icon">
-                <i class="fa-brands fa-telegram fa-fw fa-6x"></i>
-              </span>
-              <span class="fw-bold">@mesaidlg</span>
-            </a>
-          </div>
-          <div class="col mb-4">
-            <a href="https://facebook.com/mesaidlg" target="_blank" class="text-primary text-center text-decoration-none d-flex flex-column">
-              <span class="icon">
-                <i class="fa-brands fa-facebook-messenger fa-fw fa-6x"></i>
-              </span>
-              <span class="fw-bold">@mesaidlg</span>
-            </a>
-          </div>
-          <div class="col mb-4">
-            <a href="mailto:hi@example.com" target="_blank" class="text-warning text-center text-decoration-none d-flex flex-column">
-              <span class="icon">
-                <i class="fa-solid fa-envelope fa-fw fa-6x"></i>
-              </span>
-              <span class="fw-bold">hi@example.com</span>
-            </a>
-          </div>
-          <div class="col mb-4">
-            <a href="tel:+62274000000" target="_blank" class="text-secondary text-center text-decoration-none d-flex flex-column">
-              <span class="icon">
-                <i class="fa-solid fa-square-phone fa-fw fa-6x"></i>
-              </span>
-              <span class="fw-bold">(0274) 000000</span>
-            </a>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col mb-4">
+                <a href="https://wa.me/62087839301572" target="_blank" class="text-success text-center text-decoration-none d-flex flex-column">
+                  <span class="icon">
+                    <i class="fa-brands fa-whatsapp fa-fw fa-4x"></i>
+                  </span>
+                  <span class="fw-bold">087839301572</span>
+                </a>
+              </div>
+              <div class="col mb-4">
+                <a href="https://t.me/mesaidlg" target="_blank" class="text-info text-center text-decoration-none d-flex flex-column">
+                  <span class="icon">
+                    <i class="fa-brands fa-telegram fa-fw fa-4x"></i>
+                  </span>
+                  <span class="fw-bold">@mesaidlg</span>
+                </a>
+              </div>
+              <div class="col mb-4">
+                <a href="https://facebook.com/mesaidlg" target="_blank" class="text-primary text-center text-decoration-none d-flex flex-column">
+                  <span class="icon">
+                    <i class="fa-brands fa-facebook-messenger fa-fw fa-4x"></i>
+                  </span>
+                  <span class="fw-bold">@mesaidlg</span>
+                </a>
+              </div>
+              <div class="col mb-4">
+                <a href="mailto:hi@example.com" target="_blank" class="text-warning text-center text-decoration-none d-flex flex-column">
+                  <span class="icon">
+                    <i class="fa-solid fa-envelope fa-fw fa-4x"></i>
+                  </span>
+                  <span class="fw-bold">hi@example.com</span>
+                </a>
+              </div>
+              <div class="col mb-4">
+                <a href="tel:+62274000000" target="_blank" class="text-secondary text-center text-decoration-none d-flex flex-column">
+                  <span class="icon">
+                    <i class="fa-solid fa-square-phone fa-fw fa-4x"></i>
+                  </span>
+                  <span class="fw-bold">(0274) 000000</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="maps">
+    <div class="container-fluid py-5">
+      <h1 class="display-5 fw-bold mb-4 text-center">Temukan kami</h1>
+      <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.1076712619306!2d110.37024531456463!3d-7.7784069943942455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x46555c753b233f54!2zN8KwNDYnNDIuMyJTIDExMMKwMjInMjAuOCJF!5e0!3m2!1sid!2sid!4v1652762088410!5m2!1sid!2sid" height="600" class="m-0 p-0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </section>
