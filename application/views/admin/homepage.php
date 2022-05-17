@@ -37,7 +37,6 @@
                 <div class="collapse show" id="collapseCard1">
                     <div class="card-body">
                         <form method="POST" action="<?= base_url(); ?>admin/setIdentitas">
-                            <h6 class="font-weight-bold mb-3">Konten</h6>
                             <input type="hidden" name="id">
                             <div class="form-row">
                                 <div class="form-group col-md-2">
@@ -50,7 +49,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group col-md-10">
-                                    <label for="idName">ID</label>
+                                    <label for="idName">Nama ID</label>
                                     <input type="text" class="form-control <?php if (form_error('idName')) {
                                                                                 echo 'is-invalid';
                                                                             } ?>" id="idName" name="idName" aria-describedby="idNameFeedback">
@@ -60,22 +59,32 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="konten">Konten</label>
-                                <textarea name="konten" id="konten" class="form-control" rows="5"></textarea>
-                                <div id="kontenFeedback" class="invalid-feedback">
-                                    <?= form_error('konten'); ?>
+                                <label for="summernote">Isi</label>
+                                <textarea name="summernote" id="summernote" class="form-control" rows="5"></textarea>
+                                <div id="summernoteFeedback" class="invalid-feedback">
+                                    <?= form_error('summernote'); ?>
                                 </div>
                             </div>
-                            <hr>
-                            <h6 class="font-weight-bold mb-3">Style</h6>
-
+                            <button type="submit" class="btn btn-primary">Simpan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card shadow mb-4">
+                <a href="#collapseCard2" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCard2">
+                    <h6 class="m-0 font-weight-bold text-primary">Style</h6>
+                </a>
+                <div class="collapse" id="collapseCard2">
+                    <div class="card-body">
+                        <form method="POST" action="<?= base_url(); ?>admin/setIdentitas">
+                            <input type="hidden" name="id">
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text" id="inputGroup-sizing-default">Bg-Color</span>
                                         </div>
-                                        <input type="color" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="#4E73DF">
+                                        <input type="color" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="#fdffff" id="textareaBgColor" name="textareaBgColor">
                                     </div>
                                 </div>
                                 <div class="form-group col-md-6">
@@ -198,7 +207,7 @@
                 </a>
                 <div class="collapse show" id="collapseCard">
                     <div class="card-body">
-                        <div class="accordion" id="accordionExample">
+                        <!-- <div class="accordion" id="accordionExample">
                             <div class="card">
                                 <div class="card-header" id="headingOne">
                                     <h2 class="mb-0">
@@ -209,7 +218,7 @@
                                 </div>
 
                                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                    <div class="card-body">
+                                    <div class="card-body" id="one">
                                         Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the <code>.show</code> class.
                                     </div>
                                 </div>
@@ -242,7 +251,14 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
+                        <ul class="list-group" id="sortable">
+                            <li class="list-group-item"><i class="fas fa-sort handle mr-2 fa-fw"></i>An item</li>
+                            <li class="list-group-item"><i class="fas fa-sort handle mr-2 fa-fw"></i>A second item</li>
+                            <li class="list-group-item"><i class="fas fa-sort handle mr-2 fa-fw"></i>A third item</li>
+                            <li class="list-group-item"><i class="fas fa-sort handle mr-2 fa-fw"></i>A fourth item</li>
+                            <li class="list-group-item"><i class="fas fa-sort handle mr-2 fa-fw"></i>And a fifth one</li>
+                        </ul>
                     </div>
                 </div>
             </div>

@@ -77,6 +77,8 @@
 <!-- lightbox -->
 <script src="<?= base_url('assets/ekko-lightbox/'); ?>ekko-lightbox.min.js"></script>
 
+<!-- sortables -->
+<script src="http://SortableJS.github.io/Sortable/Sortable.js"></script>
 
 <script>
     $(document).ready(function() {
@@ -157,6 +159,19 @@
             }
             $('#form').submit();
         })
+
+        $('#textareaBgColor').on('change', function() {
+            const bgcolor = $(this).val();
+            $('#one').css('background-color', bgcolor);
+        })
+
+        summernote();
+
+        Sortable.create(sortable, {
+            handle: '.handle',
+            ghostClass: 'bg-info',
+            animation: 150
+        });
     }
 
     function dashboard() {

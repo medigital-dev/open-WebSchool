@@ -1891,7 +1891,7 @@ class Admin extends CI_Controller
         $activeConfig = $this->Config_model->getUploadActive();
 
         $data = [
-            'title' => 'System',
+            'title' => 'Pengaturan/Sistem',
             'sidebar' => 'system',
             'config' => $activeConfig
         ];
@@ -1937,7 +1937,7 @@ class Admin extends CI_Controller
     public function homepage()
     {
         $data = [
-            'title' => 'System',
+            'title' => 'Pengaturan/Homepage',
             'sidebar' => 'system',
         ];
 
