@@ -1,6 +1,5 @@
-
-# Created by https://www.toptal.com/developers/gitignore/api/windows,codeigniter,visualstudiocode
-# Edit at https://www.toptal.com/developers/gitignore?templates=windows,codeigniter,visualstudiocode
+# Created by https://www.toptal.com/developers/gitignore/api/git,codeigniter,windows,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=git,codeigniter,windows,visualstudiocode
 
 ### CodeIgniter ###
 */config/development
@@ -10,19 +9,34 @@
 !system/cache/*
 !*/cache/index.html
 !*/cache/.htaccess
-user_guide
-# user_guide_src/build/*
-# user_guide_src/cilexer/build/*
-# user_guide_src/cilexer/dist/*
-# user_guide_src/cilexer/pycilexer.egg-info/*
+
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
 
 #codeigniter 3
 application/logs/*
 !application/logs/index.html
 !application/logs/.htaccess
+/vendor/
 
 ### CodeIgniter Patch ###
 
+### Git ###
+# Created by git for backups. To disable backups in Git:
+# $ git config --global mergetool.keepBackup false
+*.orig
+
+# Created by git when using merge tools for conflicts
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+*_BACKUP_*.txt
+*_BASE_*.txt
+*_LOCAL_*.txt
+*_REMOTE_*.txt
 
 ### VisualStudioCode ###
 .vscode/*
@@ -42,12 +56,6 @@ application/logs/*
 # Ignore all local history of files
 .history
 .ionide
-
-# Support for Project snippet scope
-.vscode/*.code-snippets
-
-# Ignore code-workspaces
-*.code-workspace
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -75,5 +83,5 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/windows,codeigniter,visualstudiocode
+# End of https://www.toptal.com/developers/gitignore/api/git,codeigniter,windows,visualstudiocode
 assets/upload/
