@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: May 14, 2022 at 01:16 PM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 8.0.15
+-- Host: localhost:3306
+-- Generation Time: Jan 08, 2023 at 10:05 PM
+-- Server version: 8.0.30
+-- PHP Version: 7.4.33
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -28,23 +28,23 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `blog` (
-  `id` int(11) DEFAULT NULL,
+  `id` int DEFAULT NULL,
   `id_blog` varchar(11) NOT NULL,
   `link` varchar(128) NOT NULL,
-  `id_user` int(11) NOT NULL,
+  `id_user` int NOT NULL,
   `date` timestamp NULL DEFAULT NULL,
-  `tahun` int(11) NOT NULL,
-  `bulan` int(11) NOT NULL,
-  `tanggal` int(11) NOT NULL,
+  `tahun` int NOT NULL,
+  `bulan` int NOT NULL,
+  `tanggal` int NOT NULL,
   `waktu` time NOT NULL,
   `foto_sampul` varchar(256) NOT NULL,
   `judul` varchar(256) NOT NULL,
   `isi` longtext NOT NULL,
   `kategori` varchar(64) NOT NULL,
-  `status` int(11) NOT NULL,
-  `viewer` int(11) NOT NULL,
-  `pin` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `status` int NOT NULL,
+  `viewer` int NOT NULL,
+  `pin` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -53,10 +53,10 @@ CREATE TABLE `blog` (
 --
 
 CREATE TABLE `blog_tag` (
-  `id_tag_blog` int(11) NOT NULL,
+  `id_tag_blog` int NOT NULL,
   `id_tag` varchar(12) NOT NULL,
   `id_blog` varchar(12) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -65,18 +65,18 @@ CREATE TABLE `blog_tag` (
 --
 
 CREATE TABLE `config_upload` (
-  `id_config_upload` int(11) NOT NULL,
+  `id_config_upload` int NOT NULL,
   `upload_path` varchar(128) NOT NULL,
   `allowed_types` longtext NOT NULL,
   `file_name` varchar(128) DEFAULT NULL,
   `file_ext_tolower` tinyint(1) NOT NULL,
   `over_write` tinyint(1) NOT NULL,
-  `max_size` int(11) NOT NULL,
+  `max_size` int NOT NULL,
   `encrypt_name` tinyint(1) NOT NULL,
   `remove_spaces` tinyint(1) NOT NULL,
   `upload_profil_name` varchar(128) NOT NULL,
   `upload_is_active` tinyint(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `config_upload`
@@ -88,11 +88,24 @@ INSERT INTO `config_upload` (`id_config_upload`, `upload_path`, `allowed_types`,
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `icon_medsos`
+--
+
+CREATE TABLE `icon_medsos` (
+  `id` int NOT NULL,
+  `icon_id` varchar(128) NOT NULL,
+  `nama` varchar(64) NOT NULL,
+  `code` varchar(128) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `identitas`
 --
 
 CREATE TABLE `identitas` (
-  `id_sekolah` int(11) NOT NULL,
+  `id_sekolah` int NOT NULL,
   `nama` varchar(128) DEFAULT NULL,
   `alamat` varchar(128) DEFAULT NULL,
   `latitude` double DEFAULT NULL,
@@ -102,7 +115,7 @@ CREATE TABLE `identitas` (
   `website` varchar(32) DEFAULT NULL,
   `logo` varchar(128) DEFAULT NULL,
   `tagline` varchar(200) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -111,10 +124,10 @@ CREATE TABLE `identitas` (
 --
 
 CREATE TABLE `kategori` (
-  `id_kategori` int(11) NOT NULL,
+  `id_kategori` int NOT NULL,
   `nama_kategori` varchar(128) NOT NULL,
   `slug_kategori` varchar(128) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -123,8 +136,8 @@ CREATE TABLE `kategori` (
 --
 
 CREATE TABLE `komentar` (
-  `id_komentar` int(11) NOT NULL,
-  `parent_comment` int(11) DEFAULT NULL,
+  `id_komentar` int NOT NULL,
+  `parent_comment` int DEFAULT NULL,
   `id_blog` varchar(16) NOT NULL,
   `date_comment` datetime NOT NULL,
   `nama` varchar(32) DEFAULT NULL,
@@ -133,7 +146,7 @@ CREATE TABLE `komentar` (
   `pesan` longtext NOT NULL,
   `icon` varchar(64) NOT NULL,
   `is_read` tinyint(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -142,10 +155,10 @@ CREATE TABLE `komentar` (
 --
 
 CREATE TABLE `level_user` (
-  `id_level` int(11) NOT NULL,
+  `id_level` int NOT NULL,
   `nama_level` varchar(16) NOT NULL,
-  `akses` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `akses` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `level_user`
@@ -161,15 +174,13 @@ INSERT INTO `level_user` (`id_level`, `nama_level`, `akses`) VALUES
 --
 
 CREATE TABLE `media_sosial` (
-  `id_medsos` int(11) NOT NULL,
-  `facebook` varchar(100) DEFAULT NULL,
-  `twitter` varchar(100) DEFAULT NULL,
-  `instagram` varchar(100) DEFAULT NULL,
-  `youtube` varchar(100) DEFAULT NULL,
-  `whatsapp` varchar(100) DEFAULT NULL,
-  `telegram` varchar(100) DEFAULT NULL,
-  `maps` varchar(100) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `id` int NOT NULL,
+  `medsos_id` varchar(128) DEFAULT NULL,
+  `nama_alias` varchar(24) DEFAULT NULL,
+  `icon` varchar(64) DEFAULT NULL,
+  `url` varchar(128) DEFAULT NULL,
+  `is_active` tinyint(1) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -178,14 +189,14 @@ CREATE TABLE `media_sosial` (
 --
 
 CREATE TABLE `menu` (
-  `id_menu` int(11) NOT NULL,
-  `urutan` int(11) NOT NULL,
-  `parent_id` int(11) DEFAULT NULL,
+  `id_menu` int NOT NULL,
+  `urutan` int NOT NULL,
+  `parent_id` int DEFAULT NULL,
   `href` varchar(128) NOT NULL,
   `title` varchar(128) NOT NULL,
   `tipe` enum('Default','Dropdown') NOT NULL,
-  `new_tab` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `new_tab` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -194,16 +205,16 @@ CREATE TABLE `menu` (
 --
 
 CREATE TABLE `pages` (
-  `id` int(11) NOT NULL,
+  `id` int NOT NULL,
   `id_page` varchar(16) NOT NULL,
-  `id_user` int(11) NOT NULL,
+  `id_user` int NOT NULL,
   `url` varchar(32) NOT NULL,
   `title` varchar(128) NOT NULL,
   `deskripsi` varchar(128) DEFAULT NULL,
   `content` longtext NOT NULL,
   `date` datetime NOT NULL,
-  `status` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `status` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -212,14 +223,14 @@ CREATE TABLE `pages` (
 --
 
 CREATE TABLE `pesan` (
-  `id_pesan` int(11) NOT NULL,
+  `id_pesan` int NOT NULL,
   `message_date` datetime NOT NULL,
   `nama_pengirim` varchar(64) NOT NULL,
   `wa_pesan` varchar(16) NOT NULL,
   `email_pesan` varchar(24) NOT NULL,
   `pesan` longtext NOT NULL,
   `is_read` tinyint(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -228,10 +239,10 @@ CREATE TABLE `pesan` (
 --
 
 CREATE TABLE `tag` (
-  `id_tag` int(11) NOT NULL,
+  `id_tag` int NOT NULL,
   `nama_tag` varchar(128) NOT NULL,
   `slug_tag` varchar(128) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -240,15 +251,15 @@ CREATE TABLE `tag` (
 --
 
 CREATE TABLE `upload` (
-  `id_upload` int(11) NOT NULL,
+  `id_upload` int NOT NULL,
   `type` varchar(64) NOT NULL,
-  `id_type` int(11) DEFAULT NULL,
+  `id_type` int DEFAULT NULL,
   `nama_file` varchar(128) NOT NULL,
-  `alt` longtext DEFAULT NULL,
+  `alt` longtext,
   `title` varchar(128) DEFAULT NULL,
   `href` varchar(128) DEFAULT NULL,
   `date_upload` datetime DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -257,15 +268,15 @@ CREATE TABLE `upload` (
 --
 
 CREATE TABLE `user` (
-  `id_user` int(11) NOT NULL,
+  `id_user` int NOT NULL,
   `nama` varchar(32) NOT NULL,
   `email` varchar(32) NOT NULL,
   `telepon` varchar(16) DEFAULT NULL,
   `username` varchar(32) NOT NULL,
   `password` varchar(128) NOT NULL,
-  `level` int(11) NOT NULL,
+  `level` int NOT NULL,
   `is_active` tinyint(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `user`
@@ -297,6 +308,13 @@ ALTER TABLE `config_upload`
   ADD PRIMARY KEY (`id_config_upload`);
 
 --
+-- Indexes for table `icon_medsos`
+--
+ALTER TABLE `icon_medsos`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `icon_id` (`icon_id`);
+
+--
 -- Indexes for table `identitas`
 --
 ALTER TABLE `identitas`
@@ -324,7 +342,8 @@ ALTER TABLE `level_user`
 -- Indexes for table `media_sosial`
 --
 ALTER TABLE `media_sosial`
-  ADD PRIMARY KEY (`id_medsos`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `medsos_id` (`medsos_id`);
 
 --
 -- Indexes for table `menu`
@@ -370,67 +389,79 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `blog_tag`
 --
 ALTER TABLE `blog_tag`
-  MODIFY `id_tag_blog` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_tag_blog` int NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `config_upload`
 --
 ALTER TABLE `config_upload`
-  MODIFY `id_config_upload` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_config_upload` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `icon_medsos`
+--
+ALTER TABLE `icon_medsos`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `kategori`
 --
 ALTER TABLE `kategori`
-  MODIFY `id_kategori` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_kategori` int NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `komentar`
 --
 ALTER TABLE `komentar`
-  MODIFY `id_komentar` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_komentar` int NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `level_user`
 --
 ALTER TABLE `level_user`
-  MODIFY `id_level` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_level` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `media_sosial`
+--
+ALTER TABLE `media_sosial`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `menu`
 --
 ALTER TABLE `menu`
-  MODIFY `id_menu` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_menu` int NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `pages`
 --
 ALTER TABLE `pages`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `pesan`
 --
 ALTER TABLE `pesan`
-  MODIFY `id_pesan` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_pesan` int NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tag`
 --
 ALTER TABLE `tag`
-  MODIFY `id_tag` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_tag` int NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `upload`
 --
 ALTER TABLE `upload`
-  MODIFY `id_upload` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_upload` int NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_user` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
