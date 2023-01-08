@@ -40,8 +40,6 @@
               <i class="fab fa-youtube fa-fw"></i>
             </div>
             <div id="date-header">
-              <!-- <span id="tanggal">Selasa, 31 Januari 2020 |</span> -->
-              <span id="jam">31/12/2022 10:41:29</span>
             </div>
           </div>
         </div>
@@ -98,6 +96,13 @@
   <script src="<?= base_url('plugins/jquery/jquery.min.js'); ?>"></script>
   <!-- Bootstrap Bundle with Popper -->
   <script src="<?= base_url('plugins/bootstrap/js/bootstrap.bundle.min.js'); ?>"></script>
+  <!-- Functions -->
+  <script src="<?= base_url('dist/js/functions.js'); ?>"></script>
+
+  <script>
+    runDateNow();
+  </script>
+
 </body>
 
 </html>
