@@ -16,12 +16,28 @@ class Web extends CI_Controller
         $this->load->model('Tag_model');
         $this->load->model('Menu_model');
         $this->load->model('Identitas_model');
+
+        $this->load->model('Model_web_config', 'm_webConfig');
+        $this->load->model('Model_media_sosial', 'm_mediaSosial');
+        $this->load->model('Model_identitas', 'm_identitas');
     }
 
     public function index()
     {
+        $allMenu = $this->Menu_model->getAll();
+        $mainMenu = $this->Menu_model->getMainMenu();
+        $webConfig = $this->m_webConfig->get();
+        $mediaSosial = $this->m_mediaSosial->get();
+        $identitas = $this->m_identitas->get();
+
         $data = [
             'title' => 'SMP Negeri 2 Wonosari - #EsperoJaya',
+            'webConfig' => $webConfig,
+            'menuUtama' => $mainMenu,
+            'allMenu' => $allMenu,
+            'dataMedsos' => $mediaSosial,
+            'identitas' => $identitas,
+
         ];
 
         $this->load->view('public/index', $data);

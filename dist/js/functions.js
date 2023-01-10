@@ -4,7 +4,7 @@ function runDateNow() {
     let y = waktu.getFullYear();
     let mo = puluhan(waktu.getMonth() + 1);
     let d = puluhan(waktu.getDate());
-    let h = waktu.getHours();
+    let h = puluhan(waktu.getHours());
     let m = puluhan(waktu.getMinutes());
     let s = puluhan(waktu.getSeconds());
 
