@@ -12,8 +12,7 @@ class Auth extends CI_Controller
         $this->load->model('Identitas_model');
 
         if (isset($_SESSION['user'])) {
-            $level = $_SESSION['user']['level'];
-            redirect($level);
+            redirect(base_url('admin'));
         }
     }
 
