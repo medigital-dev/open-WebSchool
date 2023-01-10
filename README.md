@@ -1,14 +1,14 @@
-# Tentang CMS-meSchool
+# Tentang
 
 **_MASIH TAHAP PENGEMBANGAN_**
 
-CMS-meSchool adalah sebuah aplikasi website sekolah sederhana yang berbasis Content Management System.
+Open WebSchool adalah sebuah Sistem Informasi berbasis web yang menerapkan Content Management System (CMS) dalam pengelolaan datanya. Aplikasi bisa digunakan secara bebas dan opensource, sehingga bisa dikembangkan sendiri. Akan tetapi anda harus membaca lisensi dan Ketentuan Penggunaannya.
 
 # Official website
 
-- Homepage: https://me-digital.net/cms-meschool
-- Demo: https://demo.me-digital.net/cms-meschool
-- User Guide: https://me-digital.net/cms-meschool/guide
+- Homepage: _under constructor_
+- Demo: _under constructor_
+- User Guide: _under constructor_
 
 # Feature
 
@@ -27,6 +27,16 @@ CMS-meSchool adalah sebuah aplikasi website sekolah sederhana yang berbasis Cont
 - ### Responsive
 
   Dibuat untuk segala perangkat (Desktop/Tablet/Smartphone).
+
+- ### Ringan
+
+  Ukuran source code dibawah 20Mb!
+
+# Ketentuan Penggunaan
+
+- Anda bisa memodifikasi (menambah dan atau mengurangi) script maupun konten yang ada dalam template ini.
+- Segala akibat dari modifikasi tersebut sepenuhnya menjadi tanggung jawab Anda.
+- Saya akan sangat berterimakasih jika anda menyertakan sumber ini pada website Anda.
 
 # Instalasi
 
@@ -52,17 +62,13 @@ CMS-meSchool adalah sebuah aplikasi website sekolah sederhana yang berbasis Cont
 5. Testing websitenya
 6. Ada yang error? jangan sungkan untuk [kontak](#kontak) kami
 
-# Donasi
+# Donation
 
-Mari berdonasi agar kami semangat memperbaharui aplikasi ini, sampaikan donasi anda melalui:
+Support saya di:
 
-- BCA: 8950501198
-- BRI: 698801015723534
-- BPD DIY: 002211019059
-- e-wallet (OVO/Gopay/Shopee Pay/Dana): 087839301572
-
-Semua atas nama **MUHAMMAD SAID LATIF GHOFARI**.
-Jangan lupa konfirmasi melalui [kontak](#kontak), supaya saya kenal anda.
+- [Trakteer.id](https://trakteer.id/mesaidlg/tip)
+- [ko-fi.com](https://ko-fi.com/mesaidlg)
+- [buymeacofee.com](https://buymeacoffee.com/mesaidlg)
 
 # Kontak
 
@@ -70,5 +76,4 @@ Lihat [profil](https://github.com/mesaidlg).
 
 # Lisensi
 
-Copyright (c) 2022 [@mesaidlg](https://github.com/mesaidlg) under MIT Licence.
-Lihat [syarat dan ketentuan](http://me-digital.net/cms-meschool/tos).
+&copy; 2022 Created & Develop by [@mesaidlg](https://muhsaidlg.my.id) dibawah [lisensi MIT](LICENSE) dan [Ketentuan Penggunaan](#ketentuan-penggunaan).
