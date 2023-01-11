@@ -37,6 +37,12 @@
     <!-- ekko-lightbox -->
     <!-- <link rel="stylesheet" href="<?= base_url('plugins/ekko-lightbox/ekko-lightbox.css'); ?>"> -->
 
+    <style>
+        #selectMedsos {
+            /* font-family: 'FontAwesome', 'sans-serif'; */
+        }
+    </style>
+
 </head>
 
 <body id="page-top">

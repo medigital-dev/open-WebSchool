@@ -71,6 +71,36 @@
 
 <script>
     $(document).ready(function() {
+        function identitas() {
+            bsCustomFileInput.init();
+            $('#file').change(function() {
+                const file = document.querySelector('#file');
+                const imgPreview = document.querySelector('.img-preview');
+                const fileFoto = new FileReader();
+
+                fileFoto.readAsDataURL(file.files[0]);
+                fileFoto.onload = function(e) {
+                    imgPreview.src = e.target.result;
+                }
+            });
+            $('.deleteMedsos').click(function(e) {
+                e.preventDefault();
+                const url = $(this).attr('href');
+
+                Swal.fire({
+                    title: 'Hapus data media sosial ini?',
+                    showDenyButton: true,
+                    showCancelButton: false,
+                    confirmButtonText: 'Hapus',
+                    denyButtonText: 'Batal',
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        document.location.href = url;
+                    }
+                })
+            });
+        }
+
         $('.defaultSelect2').select2({
             theme: 'bootstrap4',
         });

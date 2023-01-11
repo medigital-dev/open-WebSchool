@@ -1366,11 +1366,11 @@ class Admin extends CI_Controller
     public function identitas()
     {
         $dataIdentitas = $this->Identitas_model->get();
-        $dataMedsos = $this->Medsos_model->getAll();
+        $dataMedsos = $this->m_medsos->get();
 
         if ($dataIdentitas) {
             if ($dataIdentitas['logo'] == '') {
-                $logo = base_url('assets/global/images/default_logo.png');
+                $logo = base_url('dist/images/medigitaldev-green.png');
             } else {
                 $logo = $dataIdentitas['logo'];
             }
@@ -1388,31 +1388,7 @@ class Admin extends CI_Controller
             ];
         } else {
             $identitas = [
-                'id' => '', 'nama' => '', 'alamat' => '', 'latitude' => '', 'longitude' => '', 'telepon' => '', 'email' => '', 'website' => '', 'tagline' => '', 'logo' => base_url('assets/global/images/default_logo.png')
-            ];
-        }
-
-        if ($dataMedsos) {
-            $medsos = [
-                'id' => $dataMedsos['id_medsos'],
-                'facebook' => $dataMedsos['facebook'],
-                'twitter' => $dataMedsos['twitter'],
-                'instagram' => $dataMedsos['instagram'],
-                'whatsapp' => $dataMedsos['whatsapp'],
-                'youtube' => $dataMedsos['youtube'],
-                'telegram' => $dataMedsos['telegram'],
-                'maps' => $dataMedsos['maps'],
-            ];
-        } else {
-            $medsos = [
-                'id' => '',
-                'facebook' => '',
-                'twitter' => '',
-                'instagram' => '',
-                'whatsapp' => '',
-                'youtube' => '',
-                'telegram' => '',
-                'maps' => ''
+                'id' => '', 'nama' => '', 'alamat' => '', 'latitude' => '', 'longitude' => '', 'telepon' => '', 'email' => '', 'website' => '', 'tagline' => '', 'logo' => base_url('dist/images/medigitaldev-green.png')
             ];
         }
 
@@ -1420,7 +1396,7 @@ class Admin extends CI_Controller
             'title' => 'Menu',
             'sidebar' => 'identitas',
             'data' => $identitas,
-            'medsos' => $medsos
+            'medsos' => $dataMedsos
         ];
 
         $this->load->view('template/sbadmin/header', $data);
@@ -1492,27 +1468,23 @@ class Admin extends CI_Controller
 
     public function setMedsos()
     {
-        $id = $this->input->post('id');
         $data = [
-            'facebook' => htmlspecialchars($this->input->post('facebook')),
-            'twitter' => htmlspecialchars($this->input->post('twitter')),
-            'instagram' => htmlspecialchars($this->input->post('instagram')),
-            'youtube' => htmlspecialchars($this->input->post('youtube')),
-            'whatsapp' => htmlspecialchars($this->input->post('whatsapp')),
-            'telegram' => htmlspecialchars($this->input->post('telegram')),
-            'maps' => htmlspecialchars($this->input->post('maps')),
+            'icon' => $this->input->post('icon'),
+            'url' => htmlspecialchars($this->input->post('url')),
+            'is_active' => 1,
         ];
 
-        if ($id == '') {
-            if ($this->Medsos_model->set($data)) {
-                $this->session->set_flashdata('message', 'success|Data media sosial berhasil disimpan.');
-                redirect('admin/identitas');
-            }
-        } else {
-            if ($this->Medsos_model->update($id, $data)) {
-                $this->session->set_flashdata('message', 'success|Media Sosial berhasil disimpan.');
-                redirect('admin/identitas');
-            }
+        if ($this->m_medsos->save($data)) {
+            $this->session->set_flashdata('message', 'success|Data media sosial berhasil disimpan.');
+            redirect('admin/identitas');
+        }
+    }
+
+    public function deleteMedsos($id)
+    {
+        if ($this->m_medsos->delete(['id' => $id])) {
+            $this->session->set_flashdata('message', 'success|Data media sosial berhasil dihapus.');
+            redirect('admin/identitas');
         }
     }
 

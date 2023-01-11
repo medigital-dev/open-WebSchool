@@ -293,19 +293,7 @@ function editUser(id) {
   $('#nama').focus();
 }
 
-function identitas() {
-  bsCustomFileInput.init();
-  $('#file').change(function() {
-      const file = document.querySelector('#file');
-      const imgPreview = document.querySelector('.img-preview');
-      const fileFoto = new FileReader();
 
-      fileFoto.readAsDataURL(file.files[0]);
-      fileFoto.onload = function(e) {
-          imgPreview.src = e.target.result;
-      }
-  });
-}
 
 function buttonReply(parentID, idPost) {
   $('#parentID').val(parentID);

@@ -28,7 +28,7 @@
     </div>
 
     <div class="row">
-        <div class="col-lg-9">
+        <div class="col-lg-8">
             <div class="card shadow mb-4">
                 <a href="#collapseTag" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseTag">
                     <h6 class="m-0 font-weight-bold text-primary">Data Identitas Sekolah</h6>
@@ -97,7 +97,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-4">
             <div class="card shadow mb-4">
                 <a href="#collapseLogo" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseLogo">
                     <h6 class="m-0 font-weight-bold text-primary" id="judul">Logo</h6>
@@ -106,7 +106,9 @@
                     <?= form_open_multipart(base_url('admin/setLogo')); ?>
                     <input type="hidden" name="id" value="<?= $data['id']; ?>">
                     <div class="card-body">
-                        <img class="img-thumbnail w-100 mb-3 img-preview" id="preview" src="<?= $data['logo']; ?>" alt="Logo">
+                        <div class="text-center">
+                            <img class="img-thumbnail w-50 mb-3 img-preview" id="preview" src="<?= $data['logo']; ?>" alt="Logo">
+                        </div>
                         <label class="form-label" for="file">Ganti logo</label>
                         <div class="input-group mb-3">
                             <div class="custom-file">
@@ -126,56 +128,41 @@
                     <h6 class="m-0 font-weight-bold text-primary" id="judul">Media Sosial</h6>
                 </a>
                 <div class="collapse" id="collapseLogo">
-                    <form action="<?= base_url('admin/setMedsos'); ?>" method="POST" id="formTag">
-                        <input type="hidden" name="id" id="id" value="<?= $medsos['id']; ?>">
-                        <div class="card-body">
+                    <div class="card-body">
+                        <form action="<?= base_url('admin/setMedsos'); ?>" method="POST" id="formTag">
+                            <label>Tambah Media Sosial</label>
                             <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-facebook"><i class="fab fa-facebook fa-fw"></i></span>
+                                <select class="custom-select col-3" id="selectMedsos" name="icon">
+                                    <option value="0" selected>Icon</option>
+                                    <option value="<i class='fab fa-facebook'></i>">Facebook</option>
+                                    <option value="<i class='fab fa-instagram'></i>">Instagram</option>
+                                    <option value="<i class='fab fa-telegram'></i>">Telegram</option>
+                                    <option value="<i class='fab fa-twitter'></i>">Twitter</option>
+                                    <option value="<i class='fab fa-youtube'></i>">Youtube</option>
+                                    <option value="<i class='fab fa-whatsapp'></i>">Whatsapp</option>
+                                </select>
+                                <input type="text" class="form-control" placeholder="Url" name="url" aria-label="Text input with dropdown button">
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-primary" id="buttonSimpan"><i class="fas fa-save"></i></button>
                                 </div>
-                                <input type="text" class="form-control" placeholder="Link" aria-label="Username" aria-describedby="basic-facebook" id="facebook" name="facebook" value="<?= $medsos['facebook']; ?>">
                             </div>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-twitter"><i class="fab fa-twitter fa-fw"></i></span>
-                                </div>
-                                <input type="text" class="form-control" placeholder="Link" aria-label="Username" aria-describedby="basic-twitter" id="twitter" name="twitter" value="<?= $medsos['twitter']; ?>">
-                            </div>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-instagram"><i class="fab fa-instagram fa-fw"></i></span>
-                                </div>
-                                <input type="text" class="form-control" placeholder="Link" aria-label="Username" aria-describedby="basic-instagram" id="instagram" name="instagram" value="<?= $medsos['instagram']; ?>">
-                            </div>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-youtube"><i class="fab fa-youtube fa-fw"></i></span>
-                                </div>
-                                <input type="text" class="form-control" placeholder="Link" aria-label="Username" aria-describedby="basic-youtube" id="youtube" name="youtube" value="<?= $medsos['youtube']; ?>">
-                            </div>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-whatsapp"><i class="fab fa-whatsapp fa-fw"></i></span>
-                                </div>
-                                <input type="text" class="form-control" placeholder="Link" aria-label="Username" aria-describedby="basic-whatsapp" id="whatsapp" name="whatsapp" value="<?= $medsos['whatsapp']; ?>">
-                            </div>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-telegram"><i class="fab fa-telegram fa-fw"></i></span>
-                                </div>
-                                <input type="text" class="form-control" placeholder="Link" aria-label="Username" aria-describedby="basic-telegram" id="telegram" name="telegram" value="<?= $medsos['telegram']; ?>">
-                            </div>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-maps"><i class="fas fa-map-marker-alt fa-fw"></i></span>
-                                </div>
-                                <input type="text" class="form-control" placeholder="Link" aria-label="Username" aria-describedby="basic-maps" id="maps" name="maps" value="<?= $medsos['maps']; ?>">
-                            </div>
-                            <div class="d-flex justify-content-between">
-                                <button type="submit" class="btn btn-primary" id="buttonSimpan">Simpan</button>
-                            </div>
-                        </div>
-                    </form>
+                        </form>
+                        <label>Daftar Media Sosial</label>
+                        <table class="table table-sm table-bordered table-hover w-100">
+                            <tr>
+                                <th class="text-center" style="width: 10px;">Icon</th>
+                                <th class="text-center">Url</th>
+                                <th class="text-center" style="width: 10px;">Aksi</th>
+                            </tr>
+                            <?php foreach ($medsos as $medsos) : ?>
+                                <tr>
+                                    <td class="text-center align-middle"><?= $medsos['icon']; ?></td>
+                                    <td class="align-middle text-break"><a href="<?= $medsos['url']; ?>" target="_blank" class="text-decoration-none"><?= $medsos['url']; ?></a></td>
+                                    <td class="text-center align-middle"><a href="<?= base_url('admin/deleteMedsos/') . $medsos['id']; ?>" class="text-danger text-decoration-none deleteMedsos" id="deleteMedsos"><i class="fas fa-trash"></i></a></td>
+                                </tr>
+                            <?php endforeach; ?>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
