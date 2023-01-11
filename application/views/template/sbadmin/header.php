@@ -12,30 +12,30 @@
     <title><?= $title; ?></title>
     <link rel="shortcut icon" href="<?= $_SESSION['sekolah']['logo']; ?>" type="image/x-icon">
     <!-- Custom fonts for this template-->
-    <link href="<?= base_url('assets/sbadmin/'); ?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="<?= base_url('plugins/fontawesome/css/all.min.css'); ?>" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- select2 -->
-    <link href="<?= base_url('assets/select2/'); ?>css/select2.min.css" rel="stylesheet">
-    <link href="<?= base_url('assets/select2/'); ?>css/select2-bootstrap4.min.css" rel="stylesheet">
+    <link href="<?= base_url('plugins/select2/css/select2.min.css'); ?>" rel="stylesheet">
+    <link href="<?= base_url('plugins/select2/css/select2-bootstrap4.min.css'); ?>" rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="<?= base_url('assets/sbadmin/'); ?>css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="<?= base_url('plugins/sbadmin/css/sb-admin-2.min.css'); ?>" rel="stylesheet">
 
     <!-- Custom styles for this page -->
-    <link href="<?= base_url('assets/sbadmin/'); ?>vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="<?= base_url('plugins/datatables/dataTables.bootstrap4.min.css'); ?>" rel="stylesheet">
 
     <!-- Summernote -->
-    <link href="<?= base_url('assets/summernote/'); ?>summernote-bs4.css" rel="stylesheet">
+    <link href="<?= base_url('plugins/summernote/summernote-bs4.css'); ?>" rel="stylesheet">
 
     <!-- my-style -->
-    <link href="<?= base_url('assets/global/'); ?>css/my-style.css" rel="stylesheet">
+    <link href="<?= base_url('dist/css/style.css'); ?>" rel="stylesheet">
 
     <!-- sweetalert2 -->
-    <link rel="stylesheet" href="<?= base_url('assets/sweetalert2/'); ?>sweetalert2.min.css">
+    <link rel="stylesheet" href="<?= base_url('plugins/sweetalert2/sweetalert2.min.css'); ?>">
 
     <!-- ekko-lightbox -->
-    <link rel="stylesheet" href="<?= base_url('assets/ekko-lightbox/'); ?>ekko-lightbox.css">
+    <!-- <link rel="stylesheet" href="<?= base_url('plugins/ekko-lightbox/ekko-lightbox.css'); ?>"> -->
 
 </head>
 

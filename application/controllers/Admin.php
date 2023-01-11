@@ -20,9 +20,10 @@ class Admin extends CI_Controller
         $this->load->model('Menu_model');
         $this->load->model('Pesan_model');
         $this->load->model('Identitas_model');
-        $this->load->model('Medsos_model');
         $this->load->model('CLogin_model');
         $this->load->model('Config_model');
+
+        $this->load->model('Model_media_sosial', 'm_medsos');
 
         if (!isset($_SESSION['user'])) {
             redirect('auth');
@@ -37,7 +38,7 @@ class Admin extends CI_Controller
         $dataPengguna = $this->User_model->getAll();
         $dataPesan = $this->Pesan_model->getAll();
         $dataIdentitas = $this->Identitas_model->get();
-        $dataMedsos = $this->Medsos_model->getAll();
+        $dataMedsos = $this->m_medsos->get();
 
         if ($dataIdentitas) {
             $dataidentitas2 = [
@@ -50,7 +51,7 @@ class Admin extends CI_Controller
             ];
         } else {
             $dataidentitas2 = [
-                'logo' => base_url('assets/global/images/default_logo.png'),
+                'logo' => '',
                 'nama' => '',
                 'alamat' => '',
                 'telepon' => '',

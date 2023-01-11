@@ -163,14 +163,16 @@
                 <div class="card-body">
                     <div class="table-responsive">
                         <table class="table table-borderless table-sm table-hover" width="100%" cellspacing="0">
-                            <tr>
-                                <td colspan="3" class="text-center"><img src="<?= $dataDashboard['daftarIdentitas']['logo']; ?>" style="width: 60%;" alt="Logo"></td>
-                            </tr>
-                            <tr>
-                                <td colspan="3">
-                                    <hr>
-                                </td>
-                            </tr>
+                            <?php if ($dataDashboard['daftarIdentitas']['logo'] != '') : ?>
+                                <tr>
+                                    <td colspan="3" class="text-center"><img src="<?= $dataDashboard['daftarIdentitas']['logo']; ?>" style="width: 60%;" alt="Logo"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">
+                                        <hr>
+                                    </td>
+                                </tr>
+                            <?php endif; ?>
                             <tr>
                                 <td style="width: 120px">Nama Sekolah</td>
                                 <td>:</td>
@@ -199,45 +201,13 @@
                             <tr>
                                 <td>Media Sosial</td>
                                 <td>:</td>
-                                <td><?php if ($dataDashboard['daftarMedsos']) : ?>
-                                        <a href="<?= $dataDashboard['daftarMedsos']['facebook']; ?>" target="_blank" class="btn btn-sm mb-1 btn-facebook <?php if ($dataDashboard['daftarMedsos']['facebook'] == '') {
-                                                                                                                                                                echo 'disabled';
-                                                                                                                                                            } ?>">
-                                            <i class="fab fa-facebook-square fa-fw"></i>
+                                <td>
+                                    <?php foreach ($dataDashboard['daftarMedsos'] as $daftarMedsos) : ?>
+                                        <a href="<?= $daftarMedsos['url']; ?>" target="_blank" class="text-decoration-none">
+                                            <?= $daftarMedsos['icon']; ?>
                                         </a>
-                                        <a href="<?= $dataDashboard['daftarMedsos']['twitter']; ?>" target="_blank" class="btn btn-sm mb-1 btn-info <?php if ($dataDashboard['daftarMedsos']['twitter'] == '') {
-                                                                                                                                                        echo 'disabled';
-                                                                                                                                                    } ?>">
-                                            <i class="fab fa-twitter-square fa-fw"></i>
-                                        </a>
-                                        <a href="<?= $dataDashboard['daftarMedsos']['instagram']; ?>" target="_blank" class="btn btn-sm mb-1 btn-warning <?php if ($dataDashboard['daftarMedsos']['instagram'] == '') {
-                                                                                                                                                                echo 'disabled';
-                                                                                                                                                            } ?>">
-                                            <i class="fab fa-instagram fa-fw"></i>
-                                        </a>
-                                        <a href="<?= $dataDashboard['daftarMedsos']['youtube']; ?>" target="_blank" class="btn btn-sm mb-1 btn-danger <?php if ($dataDashboard['daftarMedsos']['youtube'] == '') {
-                                                                                                                                                            echo 'disabled';
-                                                                                                                                                        } ?>">
-                                            <i class="fab fa-youtube fa-fw"></i>
-                                        </a>
-                                        <a href="<?= $dataDashboard['daftarMedsos']['whatsapp']; ?>" target="_blank" class="btn btn-sm mb-1 btn-success <?php if ($dataDashboard['daftarMedsos']['whatsapp'] == '') {
-                                                                                                                                                            echo 'disabled';
-                                                                                                                                                        } ?>">
-                                            <i class="fab fa-whatsapp fa-fw"></i>
-                                        </a>
-                                        <a href="<?= $dataDashboard['daftarMedsos']['telegram']; ?>" target="_blank" class="btn btn-sm mb-1 btn-primary <?php if ($dataDashboard['daftarMedsos']['telegram'] == '') {
-                                                                                                                                                            echo 'disabled';
-                                                                                                                                                        } ?>">
-                                            <i class="fab fa-telegram fa-fw"></i>
-                                        </a>
-                                        <a href="<?= $dataDashboard['daftarMedsos']['maps']; ?>" target="_blank" class="btn btn-sm mb-1 btn-info <?php if ($dataDashboard['daftarMedsos']['maps'] == '') {
-                                                                                                                                                        echo 'disabled';
-                                                                                                                                                    } ?>">
-                                            <i class="fas fa-map-marker-alt fa-fw"></i>
-                                        </a>
-                                    <?php endif; ?>
+                                    <?php endforeach; ?>
                                 </td>
-
                             </tr>
                         </table>
                     </div>
@@ -249,8 +219,7 @@
                 </div>
                 <div class="card-body">
                     <div class="table-responsive text-center">
-                        <img class="img-profile rounded-circle w-25 mb-3" src="<?= base_url('assets/sbadmin/'); ?>img/undraw_profile.svg">
-
+                        <i class="fas fa-user-alt fa-fw"></i>
                         <h5><strong><?= $user['nama']; ?></strong> (<?= $user['username']; ?>)</h5>
                         <small><?= $user['level']; ?></small>
                         <p>
