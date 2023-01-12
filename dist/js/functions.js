@@ -70,11 +70,40 @@ function system() {
 
   summernote();
 
-  Sortable.create(sortable, {
-      handle: '.handle',
-      ghostClass: 'bg-info',
-      animation: 150
+//   Sortable.create(sortable, {
+//       handle: '.handle',
+//       ghostClass: 'bg-info',
+//       animation: 150
+//   });
+
+  $('.deleteHomecontent').click(function(e) {
+    e.preventDefault();
+    const url = $(this).attr('href');
+    Swal.fire({
+        title: 'Hapus data homepage ini?',
+        showDenyButton: true,
+        showCancelButton: false,
+        confirmButtonText: 'Hapus',
+        denyButtonText: 'Batal',
+    }).then((result) => {
+        if (result.isConfirmed) {
+            document.location.href = url;
+        }
+    })
   });
+  $('.switchHomeContent').click(function() {
+    const id = $(this).attr('name');
+
+    $.post('../admin/toggleActiveHomeContent', {
+        id: id
+    }, function(response) {
+        if (response.status == true) {
+            fireNotif('success', response.message);
+        } else {
+            fireNotif('error', response.message);
+        }
+    }, 'json').fail(err => fireNotif('error', err.responseText));
+});
 }
 
 function dashboard() {
@@ -293,7 +322,34 @@ function editUser(id) {
   $('#nama').focus();
 }
 
+function identitas() {
+    bsCustomFileInput.init();
+    $('#file').change(function() {
+        const file = document.querySelector('#file');
+        const imgPreview = document.querySelector('.img-preview');
+        const fileFoto = new FileReader();
 
+        fileFoto.readAsDataURL(file.files[0]);
+        fileFoto.onload = function(e) {
+            imgPreview.src = e.target.result;
+        }
+    });
+    $('.deleteMedsos').click(function(e) {
+        e.preventDefault();
+        const url = $(this).attr('href');
+        Swal.fire({
+            title: 'Hapus data media sosial ini?',
+            showDenyButton: true,
+            showCancelButton: false,
+            confirmButtonText: 'Hapus',
+            denyButtonText: 'Batal',
+        }).then((result) => {
+            if (result.isConfirmed) {
+                document.location.href = url;
+            }
+        })
+    });
+}
 
 function buttonReply(parentID, idPost) {
   $('#parentID').val(parentID);
@@ -760,4 +816,14 @@ function alertOnClose() {
   $(window).on('beforeunload', function() {
       return '';
   });
+}
+
+function editHomeContent(id){
+    $.post('../admin/getHomeContent',{id:id},(response)=>{
+        $('#id').val(response.id);
+        $('#urutan').val(response.urutan);
+        $('#idName').val(response.id_homepage);
+        $('#summernote').summernote('reset');
+        $('#summernote').summernote('pasteHTML', response.content);
+    },'json').fail(err=>console.log(err))
 }

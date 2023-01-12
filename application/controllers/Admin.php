@@ -24,6 +24,7 @@ class Admin extends CI_Controller
         $this->load->model('Config_model');
 
         $this->load->model('Model_media_sosial', 'm_medsos');
+        $this->load->model('Model_home_content', 'm_homeContent');
 
         if (!isset($_SESSION['user'])) {
             redirect('auth');
@@ -1912,6 +1913,7 @@ class Admin extends CI_Controller
         $data = [
             'title' => 'Pengaturan/Homepage',
             'sidebar' => 'system',
+            'homeContent' => $this->m_homeContent->get(),
         ];
 
         $this->load->view('template/sbadmin/header', $data);
@@ -1920,5 +1922,60 @@ class Admin extends CI_Controller
         $this->load->view('admin/homepage');
         $this->load->view('template/sbadmin/footer');
         $this->session->unset_userdata('message');
+    }
+
+    public function setHomecontent()
+    {
+        $data = [
+            'urutan' => $this->input->post('urutan'),
+            'id_homepage' => $this->input->post('idName'),
+            'content' => $this->input->post('summernote'),
+            'is_active' => 1
+        ];
+
+        if ($this->input->post('id') != '') {
+            $data['id'] = $this->input->post('id');
+        }
+
+        if ($this->m_homeContent->save($data)) {
+            $this->session->set_flashdata('message', 'success|Homepage berhasil disimpan!');
+            redirect('admin/homepage');
+        }
+    }
+
+    public function deleteHomecontent($id)
+    {
+        if ($this->m_homeContent->delete(['id' => $id])) {
+            $this->session->set_flashdata('message', 'success|Homepage berhasil dihapus!');
+            redirect('admin/homepage');
+        }
+    }
+
+    public function toggleActiveHomeContent()
+    {
+        $id = $this->input->post('id');
+        $dataHome = $this->m_homeContent->get(['id' => $id]);
+        if ($dataHome[0]['is_active'] == 1) {
+            $is_active = 0;
+        } else {
+            $is_active = 1;
+        }
+        $data = [
+            'id' => $id,
+            'is_active' => $is_active
+        ];
+
+        if ($this->m_homeContent->save($data)) {
+            echo json_encode(['message' => 'Data homepage berhasil diperbaharui', 'status' => true]);
+        } else {
+            echo json_encode(['message' => $this->db->error(), 'status' => false]);
+        }
+    }
+
+    public function getHomeContent()
+    {
+        $id = $this->input->post('id');
+        $result = $this->m_homeContent->get(['id' => $id]);
+        echo json_encode($result[0]);
     }
 }

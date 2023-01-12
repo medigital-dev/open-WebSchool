@@ -29,15 +29,15 @@
     </div>
 
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-8">
             <div class="card shadow mb-4">
                 <a href="#collapseCard1" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCard1">
                     <h6 class="m-0 font-weight-bold text-primary">Tambah/Edit Section</h6>
                 </a>
                 <div class="collapse show" id="collapseCard1">
                     <div class="card-body">
-                        <form method="POST" action="<?= base_url(); ?>admin/setIdentitas">
-                            <input type="hidden" name="id">
+                        <form method="POST" action="<?= base_url(); ?>admin/setHomecontent">
+                            <input type="hidden" name="id" id="id">
                             <div class="form-row">
                                 <div class="form-group col-md-2">
                                     <label for="urutan">Urutan</label>
@@ -70,195 +70,39 @@
                     </div>
                 </div>
             </div>
-            <div class="card shadow mb-4">
-                <a href="#collapseCard2" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCard2">
-                    <h6 class="m-0 font-weight-bold text-primary">Style</h6>
-                </a>
-                <div class="collapse" id="collapseCard2">
-                    <div class="card-body">
-                        <form method="POST" action="<?= base_url(); ?>admin/setIdentitas">
-                            <input type="hidden" name="id">
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text" id="inputGroup-sizing-default">Bg-Color</span>
-                                        </div>
-                                        <input type="color" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="#fdffff" id="textareaBgColor" name="textareaBgColor">
-                                    </div>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text" id="inputGroup-sizing-default">Height</span>
-                                        </div>
-                                        <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">px</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <label for="">Padding</label>
-                            <div class="form-row">
-                                <div class="form-group col-md-3">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text" id="inputGroup-sizing-default">T</span>
-                                        </div>
-                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">px</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group col-md-3">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text" id="inputGroup-sizing-default">R</span>
-                                        </div>
-                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">px</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group col-md-3">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text" id="inputGroup-sizing-default">B</span>
-                                        </div>
-                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">px</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group col-md-3">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text" id="inputGroup-sizing-default">L</span>
-                                        </div>
-                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">px</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <label for="">Margin</label>
-                            <div class="form-row">
-                                <div class="form-group col-md-3">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text" id="inputGroup-sizing-default">T</span>
-                                        </div>
-                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">px</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group col-md-3">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text" id="inputGroup-sizing-default">R</span>
-                                        </div>
-                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">px</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group col-md-3">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text" id="inputGroup-sizing-default">B</span>
-                                        </div>
-                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">px</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group col-md-3">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text" id="inputGroup-sizing-default">L</span>
-                                        </div>
-                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">px</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Simpan</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-4">
             <div class="card shadow mb-4">
                 <a href="#collapseCard" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCard">
                     <h6 class="m-0 font-weight-bold text-primary">Preview</h6>
                 </a>
                 <div class="collapse show" id="collapseCard">
                     <div class="card-body">
-                        <!-- <div class="accordion" id="accordionExample">
-                            <div class="card">
-                                <div class="card-header" id="headingOne">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            Collapsible Group Item #1
-                                        </button>
-                                    </h2>
-                                </div>
-
-                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                    <div class="card-body" id="one">
-                                        Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the <code>.show</code> class.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="headingTwo">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            Collapsible Group Item #2
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        Some placeholder content for the second accordion panel. This panel is hidden by default.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="headingThree">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            Collapsible Group Item #3
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                        <ul class="list-group" id="sortable">
-                            <li class="list-group-item"><i class="fas fa-sort handle mr-2 fa-fw"></i>An item</li>
-                            <li class="list-group-item"><i class="fas fa-sort handle mr-2 fa-fw"></i>A second item</li>
-                            <li class="list-group-item"><i class="fas fa-sort handle mr-2 fa-fw"></i>A third item</li>
-                            <li class="list-group-item"><i class="fas fa-sort handle mr-2 fa-fw"></i>A fourth item</li>
-                            <li class="list-group-item"><i class="fas fa-sort handle mr-2 fa-fw"></i>And a fifth one</li>
-                        </ul>
+                        <table class="table table-sm table-bordered table-hover w-100">
+                            <tr>
+                                <th class="text-center align-middle" style="width: 10px;">Urutan</th>
+                                <th class="text-center align-middle">ID</th>
+                                <th class="text-center align-middle" style="width: 120px;">Aksi</th>
+                            </tr>
+                            <?php foreach ($homeContent as $homeContent) : ?>
+                                <tr>
+                                    <td class="text-center align-middle"><?= $homeContent['urutan']; ?></td>
+                                    <td class="align-middle text-wrap"><?= $homeContent['id_homepage']; ?></td>
+                                    <td class="align-middle">
+                                        <div class="input-group">
+                                            <div class="input-group-append" id="button-addon4">
+                                                <div class="custom-control custom-switch pt-2">
+                                                    <input type="checkbox" <?= ($homeContent['is_active'] == 1) ? 'checked' : ''; ?> class="custom-control-input switchHomeContent" id="customSwitch[<?= $homeContent['id']; ?>]" name="<?= $homeContent['id']; ?>">
+                                                    <label class="custom-control-label" for="customSwitch[<?= $homeContent['id']; ?>]"></label>
+                                                </div>
+                                                <button class="btn btn-outline-warning" onclick="editHomeContent(<?= $homeContent['id']; ?>)" type="button"><i class="fas fa-edit"></i></button>
+                                                <a href="<?= base_url('admin/deleteHomecontent/') . $homeContent['id']; ?>" class="btn btn-outline-danger deleteHomecontent"><i class="fas fa-trash"></i></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            <?php endforeach; ?>
+                        </table>
                     </div>
                 </div>
             </div>
