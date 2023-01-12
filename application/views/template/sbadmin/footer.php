@@ -123,19 +123,96 @@
 
 <!-- function -->
 <script>
-    $('.switchHomeContent').click(function() {
-        const id = $(this).attr('name');
+    function progressHandlingFunction(e) {
+        if (e.lengthComputable) {
+            let ukuran = e.total / 1024;
+            let upload = e.loaded / 1024;
+            let progres = e.loaded / e.total * 100;
+            // $('.progress-bar').addClass('width', progres.toFixed() + '%');
+            $('.progress-bar').css('width', progres.toFixed() + '%').text(progres.toFixed() + '%');
+            $('.proses').text(upload.toFixed() + ' Kb / ' + ukuran.toFixed() + ' Kb');
 
-        $.post('../admin/toggleActiveHomeContent', {
-            id: id
-        }, function(response) {
-            if (response.status == true) {
-                fireNotif('success', response.message);
-            } else {
-                fireNotif('error', response.message);
+            //Reset progress on complete
+            if (e.loaded === e.total) {
+                fireNotif('success', 'Upload selesai');
             }
-        }, 'json').fail(err => fireNotif('error', err.responseText));
-    });
+        }
+    }
+
+    function uploadFile(file) {
+        let data = new FormData();
+        data.append("file", file);
+        $.ajax({
+            data: data,
+            type: "POST",
+            url: "<?= base_url('admin/setPostFile'); ?>", //Your own back-end uploader
+            cache: false,
+            contentType: false,
+            processData: false,
+            xhr: function() { //Handle progress upload
+                let myXhr = $.ajaxSettings.xhr();
+                if (myXhr.upload) myXhr.upload.addEventListener('progress', progressHandlingFunction, false);
+                Swal.fire({
+                    width: '25rem',
+                    title: 'Mengunggah file',
+                    icon: 'info',
+                    html: '<div class="progress mb-3"><div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div></div><div class="text-center small proses"></div>',
+                    showConfirmButton: false,
+                    showCancelButton: true,
+                    allowOutsideClick: false
+                }).then((result) => {
+                    if (result.dismiss === Swal.DismissReason.cancel) {
+                        fireNotif('error', 'Upload canceled!');
+                        myXhr.abort();
+                    }
+                });
+                return myXhr;
+            },
+            success: function(reponse) {
+                if (reponse == 'error') {
+                    fireNotif('error', 'Berkas terlalu besar!');
+                } else {
+                    fireNotif('success', 'Upload berhasil!');
+                    let listMimeImg = ['image/png', 'image/jpeg', 'image/jpg', 'image/webp', 'image/gif', 'image/svg'];
+                    let listMimeAudio = ['audio/mpeg', 'audio/ogg'];
+                    let listMimeVideo = ['video/mpeg', 'video/mp4', 'video/webm'];
+                    let elem;
+
+                    if (listMimeImg.indexOf(file.type) > -1) {
+                        //Picture
+                        $('#summernote').summernote('insertImage', reponse);
+                    } else if (listMimeAudio.indexOf(file.type) > -1) {
+                        //Audio
+                        elem = document.createElement("audio");
+                        elem.setAttribute("src", reponse);
+                        elem.setAttribute("controls", "controls");
+                        elem.setAttribute("preload", "metadata");
+                        $('#summernote').summernote('insertNode', elem);
+                    } else if (listMimeVideo.indexOf(file.type) > -1) {
+                        //Video
+                        elem = document.createElement("video");
+                        elem.setAttribute("src", reponse);
+                        elem.setAttribute("controls", "controls");
+                        elem.setAttribute("preload", "metadata");
+                        $('#summernote').summernote('insertNode', elem);
+                    } else {
+                        //Other file type
+                        elem = document.createElement("a");
+                        let linkText = document.createTextNode(file.name);
+                        elem.appendChild(linkText);
+                        elem.title = file.name;
+                        elem.href = reponse;
+                        elem.target = '_blank';
+                        elem.className = 'text-decoration-none';
+                        $('#summernote').summernote('insertNode', elem);
+                    }
+                }
+            },
+            fail: function(error) {
+                console.log(error);
+            }
+        });
+    }
 </script>
 
 </body>

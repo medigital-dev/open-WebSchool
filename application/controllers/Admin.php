@@ -331,7 +331,7 @@ class Admin extends CI_Controller
             }
 
             if ($_FILES['file']['error'] == 4) {
-                $sampul = base_url('assets/global/images/image-sample-post.png');
+                $sampul = '';
             } else {
                 $upload = $this->uploadFile();
                 $sampul = $upload['href'];
@@ -548,7 +548,7 @@ class Admin extends CI_Controller
             if ($_FILES['file']['error'] == 4) {
                 return null;
             } else {
-                $config['upload_path'] = './assets/upload/images/' . $tipe . '/';
+                $config['upload_path'] = './dist/upload/images/' . $tipe . '/';
                 $config['allowed_types'] = 'gif|jpg|png|jpeg';
                 $config['overwrite'] = false;
                 $config['file_name'] = random_string('alnum', 8);
@@ -561,7 +561,7 @@ class Admin extends CI_Controller
                     $fileName = $this->upload->data('file_name');
                     if ($tipe == 'post') {
                         $this->Upload_model->setUpload($tipe, null, $fileName);
-                        echo base_url('') . 'assets/upload/images/' . $tipe . '/' . $fileName;
+                        echo base_url('') . 'dist/upload/images/' . $tipe . '/' . $fileName;
                     } else {
                         return $fileName;
                     }
@@ -1444,7 +1444,10 @@ class Admin extends CI_Controller
             $result = $this->uploadFile();
             if ($result) {
                 $result['alt'] = 'Logo';
-                $this->Upload_model->set($result);
+                if (!$this->Upload_model->set($result)) {
+                    var_dump($this->db->error());
+                    die;
+                }
 
                 $id = $this->input->post('id');
 
@@ -1712,7 +1715,7 @@ class Admin extends CI_Controller
         $ext = $this->input->post('ext');
         $fullFilename = $filename . $ext;
         $tipe = $this->input->post('type');
-        $url = base_url('assets/upload/') . $tipe . '/';
+        $url = base_url('dist/upload/') . $tipe . '/';
         $hrefOld = $this->input->post('hrefOld');
         $hrefNew = $url . $fullFilename;
 
@@ -1755,7 +1758,11 @@ class Admin extends CI_Controller
                     'date_upload' => $result['date_upload'],
                 ];
 
-                $this->Upload_model->set($data);
+                if (!$this->Upload_model->set($data)) {
+                    var_dump($this->db->error());
+                    die;
+                }
+
                 $this->session->set_flashdata('message', 'success|File berhasil di upload!');
                 redirect('admin/media');
             } else {
@@ -1797,8 +1804,9 @@ class Admin extends CI_Controller
         }
 
         $direktori = './' . $uploadConfig['upload_path'] . '/' . $tipe;
+
         if (!file_exists($direktori)) {
-            mkdir($direktori, 0777);
+            mkdir($direktori, 0777, true);
         }
 
         $config['upload_path'] = $direktori;
@@ -1819,7 +1827,7 @@ class Admin extends CI_Controller
             return false;
         } else {
             $fileName = $this->upload->data('file_name');
-            $location = base_url('assets/upload/') . $tipe . '/' . $fileName;
+            $location = base_url('dist/upload/') . $tipe . '/' . $fileName;
             $title = $_FILES['file']['name'];
 
             $data = [
@@ -1837,7 +1845,10 @@ class Admin extends CI_Controller
     {
         $result = $this->uploadFile();
         if ($result) {
-            $this->Upload_model->set($result);
+            if (!$this->Upload_model->set($result)) {
+                var_dump($this->db->error());
+                die;
+            }
             echo $result['href'];
         } else {
             echo 'error';
