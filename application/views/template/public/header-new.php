@@ -21,7 +21,9 @@
     <link rel="stylesheet" href="<?= base_url('plugins/fontawesome/css/all.min.css'); ?>">
     <!-- Custom CSS -->
     <style>
-
+        .content {
+            padding: 3rem 0 1rem 0;
+        }
     </style>
     <title><?= $title; ?></title>
 </head>

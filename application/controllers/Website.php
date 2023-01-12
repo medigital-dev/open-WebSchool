@@ -12,6 +12,7 @@ class Website extends CI_Controller
         $this->load->model('Model_media_sosial', 'm_mediaSosial');
         $this->load->model('Model_identitas', 'm_identitas');
         $this->load->model('Model_menu', 'm_menu');
+        $this->load->model('Model_home_content', 'm_homeContent');
     }
 
     public function index()
@@ -21,6 +22,7 @@ class Website extends CI_Controller
         $identitas = $this->m_identitas->get();
         $mainMenu = $this->m_menu->get(['parent_id' => 0]);
         $allMenu = $this->m_menu->get();
+        $dataHome = $this->m_homeContent->get();
 
         $data = [
             'title' => ($webConfig) ? $webConfig[0]['judul'] . ' | Homepage' : 'webSchool',
@@ -29,7 +31,7 @@ class Website extends CI_Controller
             'allMenu' => $allMenu,
             'dataMedsos' => $mediaSosial,
             'identitas' => $identitas,
-
+            'homeContent' => $dataHome,
         ];
 
         $this->load->view('template/public/header-new', $data);
