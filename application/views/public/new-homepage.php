@@ -43,6 +43,59 @@ Coded by www.creative-tim.com
     <link href="<?= base_url('plugins/argon/css/nucleo-svg.css'); ?>" rel="stylesheet" /> -->
     <!-- CSS Files -->
     <link href="<?= base_url('plugins/argon/css/argon-design-system.css?v=1.2.2'); ?>" rel="stylesheet" />
+
+    <style>
+        .counter-section i {
+            display: block;
+            margin: 0 0 10px
+        }
+
+        .counter-section span.counter {
+            font-size: 40px;
+            color: #000;
+            line-height: 60px;
+            display: block;
+            /* font-family: "Oswald", sans-serif; */
+            letter-spacing: 2px
+        }
+
+        .counter-title {
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase
+        }
+
+        .counter-icon {
+            top: 25px;
+            position: relative
+        }
+
+        .counter-style2 .counter-title {
+            letter-spacing: 0.55px;
+            float: left;
+        }
+
+        .counter-style2 span.counter {
+            letter-spacing: 0.55px;
+            float: left;
+            margin-right: 10px;
+        }
+
+        .counter-style2 i {
+            float: right;
+            line-height: 26px;
+            margin: 0 10px 0 0
+        }
+
+        .counter-subheadline span {
+            float: right;
+        }
+
+        .medium-icon {
+            font-size: 40px !important;
+            margin-bottom: 15px !important;
+        }
+    </style>
 </head>
 
 <body class="landing-page">
@@ -326,7 +379,7 @@ Coded by www.creative-tim.com
                     </div>
                 </div>
                 <div class="card-deck">
-                    <div class="card bg-success text-white">
+                    <div class="card shadow bg-success text-white">
                         <div class="card-body text-white text-center">
                             <div class="mb-4">
                                 <i class="fas fa-grin-stars fa-5x"></i>
@@ -335,7 +388,7 @@ Coded by www.creative-tim.com
                             <p class="card-text">SMP Negeri 2 Wonosari merupakan sekolah favorit di kota Wonosari bahkan di Kabupaten Gunungkidul.</p>
                         </div>
                     </div>
-                    <div class="card bg-warning text-white">
+                    <div class="card shadow bg-warning text-white">
                         <div class="card-body text-white text-center">
                             <div class="mb-4">
                                 <i class="fas fa-star fa-5x"></i>
@@ -344,16 +397,16 @@ Coded by www.creative-tim.com
                             <p class="card-text">SMP Negeri 2 Wonosari mendapat akreditasi A (Unggul) dengan nilai 96 dari Badan Akreditasi Nasional Sekolah/Madrasah tahun 2021</p>
                         </div>
                     </div>
-                    <div class="card bg-primary text-white">
+                    <div class="card shadow bg-primary text-white">
                         <div class="card-body text-white text-center">
                             <div class="mb-4">
                                 <i class="fas fa-chalkboard-teacher fa-5x"></i>
                             </div>
                             <h5 class="card-title text-white">Guru dan Staff</h5>
-                            <p class="card-text">SMP Negeri 2 Wonosari memiliki guru profesional dan staff yang terbaik dalam melayani kegiatan belajar mengajar peserta didik.</p>
+                            <p class="card-text">SMP Negeri 2 Wonosari memiliki guru profesional dan staff kompeten dan berpengalaman dalam melayani kegiatan belajar mengajar peserta didik.</p>
                         </div>
                     </div>
-                    <div class="card bg-info text-white">
+                    <div class="card shadow bg-info text-white">
                         <div class="card-body text-white text-center">
                             <div class="mb-4">
                                 <i class="fas fa-school fa-5x"></i>
@@ -362,7 +415,7 @@ Coded by www.creative-tim.com
                             <p class="card-text">SMP Negeri 2 Wonosari memiliki fasilitas yang lengkap untuk mendukung kegiatan belajar mengajar.</p>
                         </div>
                     </div>
-                    <div class="card bg-danger text-white">
+                    <div class="card shadow bg-danger text-white">
                         <div class="card-body text-white text-center">
                             <div class="mb-4">
                                 <i class="fas fa-bookmark fa-5x"></i>
@@ -391,6 +444,47 @@ Coded by www.creative-tim.com
                     <div class="col-md-8">
                         <p class="lead">SMP Negeri 2 Wonosari atau yang biasa di panggil Espero merupakan Sekolah Menengah Pertama di pusat Kota Wonosari tepatnya di Jalan Veteran 8, Kepek, Wonosari, Gunungkidul, DI Yogyakarta. SMP Negeri 2 Wonosari yang didirikan sejak 1 April 1979 menjadi sekolah favorit di Kecamatan Wonosari bahkan di Kabupaten Gunungkidul. Sekolah yang sebelumnya bernama SMEP Negeri Wonosari ini memiliki peserta didik sejumlah 629, 43 Guru dan 11 Karyawan. Selain itu, setiap tahun beragam prestasi akademik maupun non akademik diperoleh.</p>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="section bg-dark text-white shadow">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-md-8 mx-auto text-center">
+                        <span class="badge badge-light badge-pill mb-3">#Data</span>
+                        <h3 class="display-3 text-white font-weight-bold">Data Statistik Sekolah</h3>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <!-- counter -->
+                    <div class="col-md-3 col-sm-6 bottom-margin text-center counter-section wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="600ms" style="visibility: visible; animation-duration: 600ms; animation-name: fadeInUp;">
+                        <i class="fa fa-chalkboard-teacher medium-icon"></i>
+                        <span class="timer counter alt-font appear text-white" data-to="43" data-speed="7000">43</span>
+                        <span class="counter-title">GTK</span>
+                    </div>
+                    <!-- end counter -->
+                    <!-- counter -->
+                    <div class="col-md-3 col-sm-6 bottom-margin text-center counter-section wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="300ms" style="visibility: visible; animation-duration: 300ms; animation-name: fadeInUp;">
+                        <i class="fa fa-users medium-icon"></i>
+                        <span id="anim-number-pizza" class="counter-number"></span>
+                        <span class="timer counter alt-font appear text-white" data-to="629" data-speed="7000">629</span>
+                        <p class="counter-title">Peserta Didik</p>
+                    </div>
+                    <!-- end counter -->
+                    <!-- counter -->
+                    <div class="col-md-3 col-sm-6 bottom-margin-small text-center counter-section wow fadeInUp xs-margin-bottom-ten animated" data-wow-duration="900ms" style="visibility: visible; animation-duration: 900ms; animation-name: fadeInUp;">
+                        <i class="fa fa-user-graduate medium-icon"></i>
+                        <span class="timer counter alt-font appear text-white" data-to="100" data-speed="7000">100</span>
+                        <span class="counter-title">% Kelulusan</span>
+                    </div>
+                    <!-- end counter -->
+                    <!-- counter -->
+                    <!-- <div class="col-md-3 col-sm-6 text-center counter-section wow fadeInUp animated" data-wow-duration="1200ms" style="visibility: visible; animation-duration: 1200ms; animation-name: fadeInUp;">
+                        <i class="fa fa-user medium-icon"></i>
+                        <span class="timer counter alt-font appear text-white" data-to="600" data-speed="7000">600</span>
+                        <span class="counter-title">Clients Served</span>
+                    </div> -->
+                    <!-- end counter -->
                 </div>
             </div>
         </div>
@@ -505,6 +599,21 @@ Coded by www.creative-tim.com
                 token: "ee6fab19c5a04ac1a32a645abde4613a",
                 application: "argon-design-system-pro"
             });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.counter').each(function() {
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 4000,
+                    easing: 'swing',
+                    step: function(now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
+        });
     </script>
 </body>
 
