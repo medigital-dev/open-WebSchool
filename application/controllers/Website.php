@@ -34,8 +34,8 @@ class Website extends CI_Controller
             'homeContent' => $dataHome,
         ];
 
-        $this->load->view('template/public/header-new', $data);
-        $this->load->view('public/index');
-        $this->load->view('template/public/footer-new');
+        // $this->load->view('template/public/header-new', $data);
+        $this->load->view('public/new-homepage', $data);
+        // $this->load->view('template/public/footer-new');
     }
 }
