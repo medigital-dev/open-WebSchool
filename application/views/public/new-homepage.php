@@ -921,52 +921,205 @@ Coded by www.creative-tim.com
         <div class="container">
             <div class="row">
                 <div class="col-md-8 mx-auto text-center">
-                    <span class="badge badge-primary badge-pill mb-3">Insight</span>
-                    <h3 class="display-3">Full-Funnel Social Analytics</h3>
-                    <p class="lead">The time is now for it to be okay to be great. For being a bright color. For standing out.</p>
+                    <span class="badge badge-primary badge-pill mb-3">#Ekstra</span>
+                    <h3 class="display-3">Pengembangan Diri</h3>
+                    <p class="lead">Kegiatan meningkatkan prestasi non akademik untuk seluruh peserta didik.</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4">
                     <div class="info">
                         <div class="icon icon-lg icon-shape icon-shape-primary shadow rounded-circle">
-                            <i class="ni ni-settings-gear-65"></i>
+                            <i class="fas fa-campground"></i>
                         </div>
-                        <h6 class="info-title text-uppercase text-primary">Social Conversations</h6>
+                        <h6 class="info-title text-uppercase text-primary">Kepramukaan</h6>
                         <p class="description opacity-8">We get insulted by others, lose trust for those others. We get back stabbed by friends. It becomes harder for us to give others a hand.</p>
-                        <a href="javascript:;" class="text-primary">More about us
-                            <i class="ni ni-bold-right text-primary"></i>
-                        </a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="info">
                         <div class="icon icon-lg icon-shape icon-shape-success shadow rounded-circle">
-                            <i class="ni ni-atom"></i>
+                            <i class="fas fa-male"></i>
                         </div>
-                        <h6 class="info-title text-uppercase text-success">Analyze Performance</h6>
+                        <h6 class="info-title text-uppercase text-success">Pleton Inti</h6>
                         <p class="description opacity-8">Don't get your heart broken by people we love, even that we give them all we have. Then we lose family over time. As we live, our hearts turn colder.</p>
-                        <a href="javascript:;" class="text-primary">Learn about our products
-                            <i class="ni ni-bold-right text-primary"></i>
-                        </a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="info">
                         <div class="icon icon-lg icon-shape icon-shape-warning shadow rounded-circle">
-                            <i class="ni ni-world"></i>
+                            <i class="fas fa-basketball-ball"></i>
                         </div>
-                        <h6 class="info-title text-uppercase text-warning">Measure Conversions</h6>
+                        <h6 class="info-title text-uppercase text-warning">Basket</h6>
                         <p class="description opacity-8">What else could rust the heart more over time? Blackgold. The time is now for it to be okay to be great. or being a bright color. For standing out.</p>
-                        <a href="javascript:;" class="text-primary">Check our documentation
-                            <i class="ni ni-bold-right text-primary"></i>
-                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info">
+                        <div class="icon icon-lg icon-shape icon-shape-info shadow rounded-circle">
+                            <i class="fas fa-futbol"></i>
+                        </div>
+                        <h6 class="info-title text-uppercase text-info">Sepakbola/Futsal</h6>
+                        <p class="description opacity-8">What else could rust the heart more over time? Blackgold. The time is now for it to be okay to be great. or being a bright color. For standing out.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info">
+                        <div class="icon icon-lg icon-shape icon-shape-danger shadow rounded-circle">
+                            <i class="fas fa-swimmer"></i>
+                        </div>
+                        <h6 class="info-title text-uppercase text-danger">Renang</h6>
+                        <p class="description opacity-8">What else could rust the heart more over time? Blackgold. The time is now for it to be okay to be great. or being a bright color. For standing out.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info">
+                        <div class="icon icon-lg icon-shape icon-shape-dark shadow rounded-circle">
+                            <i class="fas fa-volleyball-ball"></i>
+                        </div>
+                        <h6 class="info-title text-uppercase text-dark">Voli</h6>
+                        <p class="description opacity-8">What else could rust the heart more over time? Blackgold. The time is now for it to be okay to be great. or being a bright color. For standing out.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <br /><br />
+
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto text-center">
+                    <span class="badge badge-primary badge-pill mb-3">#Feedback</span>
+                    <h3 class="display-3">Kata Mereka</h3>
+                    <p class="lead">Ungkapan isi hati mengenai SMP Negeri 2 Wonosari</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card-columns">
+                    <div class="card text-center p-3 border-primary">
+                        <blockquote class="blockquote mb-0">
+                            <p>A well-known quote, contained in a blockquote element.</p>
+                            <footer class="blockquote-footer">
+                                <small>
+                                    Anonymous
+                                </small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="card text-center p-3 border-primary">
+                        <blockquote class="blockquote mb-0">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ipsam reiciendis amet tempora ducimus, repellat non rerum quod velit a perspiciatis laboriosam earum similique dicta eum, asperiores assumenda sint vel?</p>
+                            <footer class="blockquote-footer">
+                                <small>
+                                    Anonymous
+                                </small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="card text-center p-3 border-primary">
+                        <blockquote class="blockquote mb-0">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, molestiae!</p>
+                            <footer class="blockquote-footer">
+                                <small>
+                                    Anonymous
+                                </small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="card text-center p-3 border-primary">
+                        <blockquote class="blockquote mb-0">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati perspiciatis quasi voluptate ipsum suscipit quaerat.</p>
+                            <footer class="blockquote-footer">
+                                <small>
+                                    Anonymous
+                                </small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="card text-center p-3 border-primary">
+                        <blockquote class="blockquote mb-0">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <footer class="blockquote-footer">
+                                <small>
+                                    Anonymous
+                                </small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="card text-center p-3 border-primary">
+                        <blockquote class="blockquote mb-0">
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            <footer class="blockquote-footer">
+                                <small>
+                                    Anonymous
+                                </small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="card text-center p-3 border-primary">
+                        <blockquote class="blockquote mb-0">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <footer class="blockquote-footer">
+                                <small>
+                                    Anonymous
+                                </small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="card text-center p-3 border-primary">
+                        <blockquote class="blockquote mb-0">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, similique cupiditate?</p>
+                            <footer class="blockquote-footer">
+                                <small>
+                                    Anonymous
+                                </small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="card text-center p-3 border-primary">
+                        <blockquote class="blockquote mb-0">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quidem modi adipisci magni exercitationem placeat dicta nisi!</p>
+                            <footer class="blockquote-footer">
+                                <small>
+                                    Anonymous
+                                </small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="card text-center p-3 border-primary">
+                        <blockquote class="blockquote mb-0">
+                            <p>A well-known quote, contained in a blockquote element.</p>
+                            <footer class="blockquote-footer">
+                                <small>
+                                    Anonymous
+                                </small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <a href="#" class="small">lihat semua</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col mx-auto mt-5">
+                    <h5 class="text-center">Kirim isi hati anda</h5>
+                    <div class="form-row">
+                        <div class="col-8">
+                            <textarea name="isi" class="form-control" id="isi" rows="1"></textarea>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-primary">Kirim</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <br /><br /> -->
     <footer class="footer">
         <div class="container">
             <div class="row row-grid align-items-center mb-5">
@@ -998,7 +1151,9 @@ Coded by www.creative-tim.com
                 </div>
                 <div class="col-md-6">
                     <div class="copyright float-right">
-                        <a class="text-muted" target="_blank" href="https://medigital.dev/webschool">WebSchool v1.0</a> | <a class="text-muted" target="_blank" href="https://www.creative-tim.com/product/argon-design-system">Creative Tim</a>.
+                        <a class="text-muted" target="_blank" href="https://medigital.dev/webschool">WebSchool v1.0</a>
+                        <!-- | 
+                        <a class="text-muted" target="_blank" href="https://www.creative-tim.com/product/argon-design-system">Creative Tim</a>. -->
                     </div>
                 </div>
             </div>
