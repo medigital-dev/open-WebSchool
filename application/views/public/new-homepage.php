@@ -1102,7 +1102,7 @@ Coded by www.creative-tim.com
                 </div>
             </div>
             <div class="row">
-                <div class="col mx-auto mt-5">
+                <div class="col-8 mx-auto mt-5">
                     <h5 class="text-center">Kirim isi hati anda</h5>
                     <div class="form-row">
                         <div class="col-8">
