@@ -1,6 +1,8 @@
-# Tentang
+**_discontinue_**
 
-**_MASIH TAHAP PENGEMBANGAN_**
+_aplikasi ini sudah tidak kami lanjutkan._
+
+# Tentang
 
 Open WebSchool adalah sebuah Sistem Informasi berbasis web yang menerapkan Content Management System (CMS) dalam pengelolaan datanya. Aplikasi bisa digunakan secara bebas dan opensource, sehingga bisa dikembangkan sendiri. Akan tetapi anda harus membaca lisensi dan Ketentuan Penggunaannya.
 
